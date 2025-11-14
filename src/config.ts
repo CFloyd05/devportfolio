@@ -4,6 +4,8 @@ export const siteConfig = {
   description: "Portfolio website of Ryan Fitzgerald",
   accentColor: "#2295a9ff",
 
+  resumeUrl: "/ConnorFloyd_Resume.pdf",
+
   social: {
     email: "connorbfloyd@gmail.com",
     linkedin: "https://www.linkedin.com/in/connorfloyd05",
@@ -61,10 +63,23 @@ export const siteConfig = {
       dateRange: "Jan 2024 - Apr 2024",
       image: "/images/projects/corvusLogo.png",
       bullets: [
-        "",
+        "Machining",
         "",
         "",
       ],
+      link: "/experience/CorvusEnergy",
+    },
+    {
+      company: "Engineering Design Team",
+      title: "UBC ThunderBikes - Co-Captain",
+      dateRange: "Jan 2024 - Apr 2024",
+      image: "/images/projects/corvusLogo.png",
+      bullets: [
+        "Machining",
+        "",
+        "",
+      ],
+      link: "/experience/CorvusEnergy",
     },
   ],
 

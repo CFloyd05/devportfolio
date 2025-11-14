@@ -1,0 +1,17 @@
+---
+import ExperiencePage from "../../components/ExperiencePage.astro";
+import "../../styles/global.css";
+import * as experience from "../../content/experience/CorvusEnergy.md";
+
+export const prerender = true;
+---
+
+<ExperiencePage
+  company={experience.frontmatter.company}
+  title={experience.frontmatter.title}
+  dateRange={experience.frontmatter.dateRange}
+  location={experience.frontmatter.location}
+  skills={experience.frontmatter.skills}
+>
+  <experience.Content />
+</ExperiencePage>

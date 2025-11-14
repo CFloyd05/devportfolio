@@ -1,0 +1,55 @@
+---
+export interface Props {
+  company: string;
+  title: string;
+  dateRange?: string;
+  location?: string;
+  skills?: string[];
+}
+
+const { company, title, dateRange, location, skills } = Astro.props;
+---
+
+<main class="bg-gray-50 min-h-screen w-full text-gray-900">
+  <section class="px-6 sm:px-10 md:px-16 lg:px-24 py-16 max-w-5xl mx-auto">
+    <!-- Header -->
+    <div class="mb-4">
+      <p class="text-xs font-semibold text-gray-500 uppercase tracking-[0.18em]">
+        Experience
+      </p>
+      <h1 class="text-3xl sm:text-4xl font-semibold mt-1">
+        {title}
+      </h1>
+      <p class="text-lg text-gray-700 mt-1">
+        {company}
+      </p>
+
+      {(dateRange || location) && (
+        <p class="text-sm text-gray-500 mt-1">
+          {dateRange}{dateRange && location && " · "}{location}
+        </p>
+      )}
+    </div>
+
+    <!-- Skills -->
+    {skills && skills.length > 0 && (
+      <div class="mb-6">
+        <h2 class="text-sm font-semibold tracking-wide text-gray-500 uppercase mb-2">
+          Skills
+        </h2>
+        <div class="flex flex-wrap gap-2">
+          {skills.map((skill) => (
+            <span class="inline-flex items-center rounded-full border border-gray-200 px-3 py-1 text-xs font-medium text-gray-700 bg-white shadow-sm">
+              {skill}
+            </span>
+          ))}
+        </div>
+      </div>
+    )}
+
+    <!-- Markdown content -->
+    <article class="prose prose-lg prose-img:rounded-xl prose-img:shadow-md text-gray-800">
+      <slot />
+    </article>
+  </section>
+</main>

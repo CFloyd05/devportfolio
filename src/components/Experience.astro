@@ -1,5 +1,6 @@
 ---
 import { siteConfig } from "../config";
+
 const hasExperience = siteConfig.experience && siteConfig.experience.length > 0;
 ---
 
@@ -8,35 +9,73 @@ const hasExperience = siteConfig.experience && siteConfig.experience.length > 0;
     <section id="experience" class="p-8 sm:p-12 md:p-16 lg:p-24">
       <div>
         <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-16 items-start">
+          {/* Left side — section title */}
           <div class="lg:col-span-4">
             <h2 class="text-3xl sm:text-4xl md:text-5xl xl:text-7xl font-bold text-gray-900">
               Experience
             </h2>
             <div
               class="w-[75px] h-[5px] mt-2 rounded-full"
-              style={`background-color: ${siteConfig.accentColor}`}
+              style={`background: ${siteConfig.accentColor}`}
             />
+            {/* Removed aboutMe paragraph so it doesn't duplicate under Experience */}
           </div>
 
+          {/* Right side — timeline + cards */}
           <div class="lg:col-span-8">
             <div class="relative">
-              {siteConfig.experience.map((exp, index) => (
-                <div class="relative mb-12 last:mb-0">
-                  {/* Timeline dot at top of card */}
-                  <div
-                    class="absolute left-1/2 -top-2 w-4 h-4 bg-white border-2 rounded-full -translate-x-1/2 z-20 transition-all duration-300"
-                    style={`border-color: ${siteConfig.accentColor}; background-color: ${siteConfig.accentColor}`}
-                  />
+              {siteConfig.experience.map((exp, index) => {
+                const Tag = exp.link ? "a" : "div";
+                const linkProps = exp.link
+                  ? {
+                      href: exp.link,
+                      target: "_blank",
+                      rel: "noopener noreferrer",
+                    }
+                  : {};
 
-                  {/* Connecting line below card */}
-                  {index < siteConfig.experience.length - 1 && (
-                    <div class="absolute left-1/2 bottom-0 w-0.5 h-12 bg-gray-300 -translate-x-1/2 translate-y-full z-10" />
-                  )}
+                return (
+                  <div class="relative mb-12 last:mb-0">
+                    {/* Timeline dot at top of card */}
+                    {/* <div
+                      class="absolute left-1/2 -top-2 w-4 h-4 border-2 rounded-full -translate-x-1/2 z-20 transition-all duration-300"
+                      style={`border-color: ${siteConfig.accentColor}; background-color: ${siteConfig.accentColor}`}
+                    /> */}
 
-                  {/* Experience card */}
-                  <div class="bg-white rounded-lg shadow-sm border border-gray-100 p-4 sm:p-5 md:p-6 hover:shadow-md transition-shadow duration-300">
-                    <div class="flex flex-col sm:flex-row sm:items-center sm:justify-between mb-4">
-                      <div>
+                    {/* Connecting line below card */}
+                    {/* {index < siteConfig.experience.length - 1 && (
+                      <div class="absolute left-1/2 bottom-0 w-0.5 h-12 bg-gray-300 -translate-x-1/2 translate-y-full z-10" />
+                    )} */}
+
+                    {/* Experience card (clickable if link exists) */}
+                    <Tag
+                      {...linkProps}
+                      class={`group relative block bg-white rounded-lg shadow-sm border border-gray-100 p-4 sm:p-5 md:p-6 transition-all duration-300 ${
+                        exp.link
+                          ? "hover:shadow-md hover:-translate-y-0.5 hover:border-gray-200"
+                          : ""
+                      }`}
+                    >
+                      {/* Open-in-new-tab icon — now matching Projects */}
+                      {exp.link && (
+                        <div class="absolute top-4 right-4 sm:top-6 sm:right-6 md:top-8 md:right-8 w-10 h-10 rounded-full bg-gray-900 text-white flex items-center justify-center shadow-sm transition-all duration-300 group-hover:bg-gray-700">
+                          <svg
+                            class="w-4 h-4 sm:w-[18px] sm:h-[18px] md:w-5 md:h-5 transition-transform duration-300 group-hover:translate-x-0.5 group-hover:-translate-y-0.5"
+                            fill="none"
+                            stroke="currentColor"
+                            viewBox="0 0 24 24"
+                          >
+                            <path
+                              stroke-linecap="round"
+                              stroke-linejoin="round"
+                              stroke-width="2"
+                              d="M7 17L17 7M17 7H7M17 7V17"
+                            />
+                          </svg>
+                        </div>
+                      )}
+
+                      <div class="mb-4">
                         <h3 class="text-lg sm:text-xl font-semibold text-gray-900">
                           {exp.title}
                         </h3>
@@ -46,25 +85,40 @@ const hasExperience = siteConfig.experience && siteConfig.experience.length > 0;
                         >
                           {exp.company}
                         </p>
+                        <p class="text-sm text-gray-500 mt-1">
+                          {exp.dateRange}
+                        </p>
                       </div>
-                      <span class="text-xs sm:text-sm text-gray-500 mt-2 sm:mt-0">
-                        {exp.dateRange}
-                      </span>
-                    </div>
 
-                    <ul class="space-y-2">
-                      {exp.bullets.map((bullet) => (
-                        <li class="flex items-start">
-                          <span class="inline-block w-1.5 h-1.5 rounded-full bg-gray-400 mt-2 mr-3 flex-shrink-0" />
-                          <span class="text-sm sm:text-base text-gray-600">
-                            {bullet}
-                          </span>
-                        </li>
-                      ))}
-                    </ul>
+                      <div class="grid grid-cols-1 sm:grid-cols-[minmax(0,1.2fr)_minmax(0,1.3fr)] gap-4 sm:gap-6 items-stretch">
+                        {exp.image && (
+                          <div class="relative flex items-center justify-center rounded-lg bg-gray-50 border border-gray-100 overflow-hidden p-3 sm:p-4">
+                            <img
+                              src={exp.image}
+                              alt={exp.company}
+                              class="max-h-24 sm:max-h-28 object-contain"
+                              loading="lazy"
+                            />
+                          </div>
+                        )}
+
+                        <div class="flex flex-col justify-center">
+                          <ul class="space-y-2">
+                            {exp.bullets.map((bullet) => (
+                              <li class="flex items-start">
+                                <span class="inline-block w-1.5 h-1.5 rounded-full bg-gray-400 mt-2 mr-3 flex-shrink-0" />
+                                <span class="text-sm sm:text-base text-gray-600">
+                                  {bullet}
+                                </span>
+                              </li>
+                            ))}
+                          </ul>
+                        </div>
+                      </div>
+                    </Tag>
                   </div>
-                </div>
-              ))}
+                );
+              })}
             </div>
           </div>
         </div>

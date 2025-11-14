@@ -1,8 +1,8 @@
 ---
-title: "Op-Amp Analyzer Circuit"
+title: "ENPH 253 Robotics Competition"
 description: "A test bench for analyzing op-amp stability."
 image: "/projects/253/253MainPhoto.jpg"
-skills: ["Electronics", "Simulation", "Circuit Design"]
+skills: ["SolidWorks", "Laser-Cutting", "3D Printing", "Machining"]
 ---
 
 ## Overview
