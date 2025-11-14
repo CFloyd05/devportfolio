@@ -9,8 +9,27 @@
     "astro": "astro"
   },
   "dependencies": {
-    "@tailwindcss/vite": "^4.1.11",
-    "astro": "^5.12.3",
-    "tailwindcss": "^4.1.11"
-  }
+    "@astrojs/markdown-remark": "^6.3.8",
+    "astro": "^5.12.3"
+  },
+  "devDependencies": {
+    "@tailwindcss/typography": "^0.5.19",
+    "@tailwindcss/vite": "^4.1.17",
+    "autoprefixer": "^10.4.22",
+    "postcss": "^8.5.6",
+    "tailwindcss": "^4.1.17"
+  },
+  "description": "<img width=\"1943\" height=\"1093\" alt=\"image\" src=\"https://github.com/user-attachments/assets/cc2ff955-17c2-48c7-81c8-479a0f061850\" />",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/CFloyd05/devportfolio.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/CFloyd05/devportfolio/issues"
+  },
+  "homepage": "https://github.com/CFloyd05/devportfolio#readme"
 }

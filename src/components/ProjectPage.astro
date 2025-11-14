@@ -1,0 +1,50 @@
+---
+export interface Props {
+  title: string;
+  description?: string;
+  image?: string;      // optional hero image
+  skills?: string[];   // optional skill tags
+}
+
+const { title, description, image, skills } = Astro.props;
+---
+
+<!-- Page wrapper using your portfolio spacing and bg -->
+<main class="bg-gray-50 min-h-screen w-full text-gray-900">
+  <section class="px-6 sm:px-10 md:px-16 lg:px-24 py-16 max-w-5xl mx-auto">
+
+    <!-- Header section -->
+    <div class="max-w-4xl mx-auto space-y-6 mb-16">
+      <h1 class="text-4xl sm:text-5xl font-bold">{title}</h1>
+
+      {description && (
+        <p class="text-lg sm:text-xl text-gray-600 leading-relaxed">
+          {description}
+        </p>
+      )}
+
+      {image && (
+        <img 
+          src={image} 
+          alt={title}
+          class="rounded-xl shadow-md border border-gray-200 w-full"
+        />
+      )}
+
+      {skills && skills.length > 0 && (
+        <div class="flex flex-wrap gap-2 pt-4">
+          {skills.map((skill) => (
+            <span class="px-3 py-1 bg-gray-900 text-white text-sm rounded-lg">
+              {skill}
+            </span>
+          ))}
+        </div>
+      )}
+    </div>
+
+    <!-- Content -->
+    <article class="prose prose-lg prose-img:rounded-xl prose-img:shadow-md text-gray-800">
+      <slot />
+    </article>
+    </section>
+</main>

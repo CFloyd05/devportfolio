@@ -1,5 +1,11 @@
 @import "tailwindcss";
 
+/* Tell Tailwind where to scan for classes, including .md files */
+@source "./src/**/*.{astro,html,js,jsx,md,mdx,svelte,ts,tsx,vue}";
+
+/* Enable Tailwind Typography so .prose works */
+@plugin "@tailwindcss/typography";
+
 body {
   font-family: 'IBM Plex Mono', monospace;
 }

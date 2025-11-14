@@ -1,92 +1,83 @@
 export const siteConfig = {
-  name: "Ryan Fitzgerald",
-  title: "Senior Software Engineer",
+  name: "Connor Floyd",
+  title: "UBC Engineering Physics Student",
   description: "Portfolio website of Ryan Fitzgerald",
-  accentColor: "#1d4ed8",
+  accentColor: "#2295a9ff",
+
   social: {
-    email: "your-email@example.com",
-    linkedin: "https://linkedin.com/in/yourprofile",
-    twitter: "https://x.com/rfitzio",
-    github: "https://github.com/RyanFitzgerald",
+    email: "connorbfloyd@gmail.com",
+    linkedin: "https://www.linkedin.com/in/connorfloyd05",
   },
+
   aboutMe:
-    "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem quos asperiores nihil consequatur tempore cupiditate architecto natus commodi corrupti quas quasi facere est, dignissimos odit nam veniam sapiente ut, vitae eligendi ipsum dolor, nostrum ullam impedit! Corrupti ratione mollitia temporibus necessitatibus, consectetur reiciendis recusandae id, dolorum quaerat, vero pariatur. Ratione!",
-  skills: ["Javascript", "React", "Node.js", "Python", "AWS", "Docker"],
+    "A third year engineering physics student at the University of British Columbia with a passion for mechanical design and manufacturing. Experienced in CAD software, 3D printing, and machining. Seeking opportunities to apply my skills and contribute to innovative projects.",
+ 
+    skills: ["SolidWorks", "Machining"],
+
   projects: [
     {
-      name: "AI Dev Roundup Newsletter",
+      name: "ENPH 253 Robotics Competition",
       description:
-        "One concise email. Five minutes. Every Tuesday. Essential AI news & trends, production-ready libraries, powerful AI tools, and real-world code examples",
+        "",
+      slug: "253",
+      link: "/projects/ENPH253",
+      image: "/projects/253/253MainPhoto.jpg",
+      skills: ["SolidWorks", "Laser-Cutting", "3D Printing", "Machining"],
+      details: `
+      <p>This project is a portable equatorial mount designed...</p>
+      <p>You can insert long-form writing here with HTML...</p>
+    `
+    },
+    {
+      name: "Smart USB Hub",
+      description:
+        "",
       link: "https://aidevroundup.com/?ref=devportfolio",
-      skills: ["React", "Node.js", "AWS"],
+      image: "/images/projects/253PortfolioPhoto.jpg",
+      skills: ["Circuit Design", "ESP32", "Raspberry Pi", "Soldering", "CAD", "3D Printing"],
     },
     {
-      name: "Chrome Extension Mastery: Build Full-Stack Extensions with React & Node.js",
+      name: "Machined Aluminum and Brass Smartphone Stand",
       description:
-        "Master the art of building production-ready, full-stack Chrome Extensions using modern web technologies and best practices",
-      link: "https://fullstackextensions.com/?ref=devportfolio",
-      skills: ["React", "Node.js", "AWS"],
+        "",
+      link: "https://aidevroundup.com/?ref=devportfolio",
+      image: "/images/projects/253PortfolioPhoto.jpg",
+      skills: ["Machining", "Mill", "Lathe"],
     },
     {
-      name: "ExtensionKit",
+      name: "Soldering Fume Extractor",
       description:
-        "Kit to jump-start your Chrome extension projects with a variety of battle-tested starter templates & examples",
-      link: "https://extensionkit.io/?ref=devportfolio",
-      skills: ["React", "Node.js", "AWS"],
+        "",
+      link: "https://aidevroundup.com/?ref=devportfolio",
+      image: "/images/projects/253PortfolioPhoto.jpg",
+      skills: ["SolidWorks", "3D printing", "Soldering"],
     },
   ],
+
   experience: [
     {
-      company: "Tech Company",
-      title: "Senior Software Engineer",
-      dateRange: "Jan 2022 - Present",
+      company: "Corvus Energy",
+      title: "Mechanical Engineering Co-op Student",
+      dateRange: "Jan 2024 - Apr 2024",
+      image: "/images/projects/corvusLogo.png",
       bullets: [
-        "Led development of microservices architecture serving 1M+ users",
-        "Reduced API response times by 40% through optimization",
-        "Mentored team of 5 junior developers",
-      ],
-    },
-    {
-      company: "Startup Inc",
-      title: "Full Stack Developer",
-      dateRange: "Jun 2020 - Dec 2021",
-      bullets: [
-        "Built and launched MVP product from scratch using React and Node.js",
-        "Implemented CI/CD pipeline reducing deployment time by 60%",
-        "Collaborated with product team to define technical requirements",
-      ],
-    },
-    {
-      company: "Digital Agency",
-      title: "Frontend Developer",
-      dateRange: "Aug 2018 - May 2020",
-      bullets: [
-        "Developed responsive web applications for 20+ clients",
-        "Improved site performance scores by 35% on average",
-        "Introduced modern JavaScript frameworks to legacy codebases",
+        "",
+        "",
+        "",
       ],
     },
   ],
+
   education: [
     {
-      school: "University Name",
-      degree: "Bachelor of Science in Computer Science",
-      dateRange: "2014 - 2018",
+      school: "University of British Columbia, Faculty of Applied Science",
+      degree: "Engineering Physics",
+      dateRange: "2023 - 2028",
       achievements: [
-        "Graduated Magna Cum Laude with 3.8 GPA",
-        "Dean's List all semesters",
-        "President of Computer Science Club",
-      ],
-    },
-    {
-      school: "Online Platform",
-      degree: "Full Stack Development Certificate",
-      dateRange: "2019",
-      achievements: [
-        "Completed 500+ hours of coursework",
-        "Built 10+ portfolio projects",
-        "Specialized in React and Node.js",
+        "GPA: 89.0%",
+        "UBC Trek Excellence Scholarship Recipient",
       ],
     },
   ],
+
 };
