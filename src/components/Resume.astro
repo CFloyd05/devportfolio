@@ -4,7 +4,7 @@ import { siteConfig } from "../config";
 const resumeUrl = siteConfig.resumeUrl ?? "/ConnorFloyd_Resume.pdf";
 ---
 
-<section id="resume" class="p-8 sm:p-12 md:p-16 lg:p-24">
+<section id="resume" class="p-6 sm:p-8 md:p-10 lg:p-12">
   <div>
     <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-16 items-start">
       {/* Left side — section title */}
@@ -24,12 +24,15 @@ const resumeUrl = siteConfig.resumeUrl ?? "/ConnorFloyd_Resume.pdf";
           href={resumeUrl}
           target="_blank"
           rel="noopener noreferrer"
-          class="group relative block bg-white rounded-xl sm:rounded-2xl shadow-sm border border-gray-100 p-5 sm:p-6 md:p-7 transition-all duration-300 hover:shadow-md hover:-translate-y-0.5 hover:border-gray-200"
+          class="group relative flex items-center justify-between bg-gray-50 hover:bg-white rounded-xl sm:rounded-2xl shadow hover:shadow-xl border border-gray-200 p-4 sm:p-6 md:p-8 transition-all duration-300 hover:-translate-y-0.5 hover:border-gray-300"
         >
-          {/* Open in new tab icon (same style as Projects/Experience) */}
-          <div class="absolute top-4 right-4 sm:top-5 sm:right-5 md:top-6 md:right-6 w-10 h-10 rounded-full bg-gray-900 text-white flex items-center justify-center shadow-sm transition-all duration-300 group-hover:bg-gray-700">
+          <h3 class="text-lg sm:text-xl font-semibold text-gray-900">
+            View Resume
+          </h3>
+
+          <div class="w-8 h-8 sm:w-9 sm:h-9 md:w-10 md:h-10 rounded-full bg-gray-900 text-white flex items-center justify-center shadow-sm transition-all duration-300 group-hover:bg-gray-700">
             <svg
-              class="w-4 h-4 sm:w-[18px] sm:h-[18px] md:w-5 md:h-5 transition-transform duration-300 group-hover:translate-x-0.5 group-hover:-translate-y-0.5"
+              class="w-4 h-4 md:w-5 md:h-5 transition-transform duration-300 group-hover:translate-x-0.5 group-hover:-translate-y-0.5"
               fill="none"
               stroke="currentColor"
               viewBox="0 0 24 24"
@@ -42,25 +45,8 @@ const resumeUrl = siteConfig.resumeUrl ?? "/ConnorFloyd_Resume.pdf";
               />
             </svg>
           </div>
-
-          <div class="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-3 sm:gap-4">
-            <div>
-              <h3 class="text-lg sm:text-xl font-semibold text-gray-900">
-                View Resume
-              </h3>
-              <p class="text-sm sm:text-base text-gray-600 mt-1">
-                Opens a PDF of my resume in a new tab.
-              </p>
-            </div>
-
-            <div class="mt-2 sm:mt-0 flex items-center gap-2 text-sm text-gray-500">
-              <span class="inline-flex items-center justify-center px-3 py-1 rounded-full bg-gray-50 border border-gray-200">
-                PDF
-              </span>
-              <span class="hidden sm:inline">Updated resume</span>
-            </div>
-          </div>
         </a>
+
       </div>
     </div>
   </div>

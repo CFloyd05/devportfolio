@@ -6,7 +6,7 @@ const hasExperience = siteConfig.experience && siteConfig.experience.length > 0;
 
 {
   hasExperience && (
-    <section id="experience" class="p-8 sm:p-12 md:p-16 lg:p-24">
+    <section id="experience" class="p-6 sm:p-8 md:p-10 lg:p-12">
       <div>
         <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-16 items-start">
           {/* Left side — section title */}
@@ -50,7 +50,7 @@ const hasExperience = siteConfig.experience && siteConfig.experience.length > 0;
                     {/* Experience card (clickable if link exists) */}
                     <Tag
                       {...linkProps}
-                      class={`group relative block bg-white rounded-lg shadow-sm border border-gray-100 p-4 sm:p-5 md:p-6 transition-all duration-300 ${
+                      class={`group relative block bg-gray-50 hover:bg-white rounded-xl sm:rounded-2xl shadow hover:shadow-xl border border-gray-200 hover:border-gray-300 p-4 sm:p-6 md:p-8 transition-all duration-300 ${
                         exp.link
                           ? "hover:shadow-md hover:-translate-y-0.5 hover:border-gray-200"
                           : ""
