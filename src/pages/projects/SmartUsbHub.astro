@@ -1,0 +1,16 @@
+---
+import ProjectPage from "../../components/ProjectPage.astro";
+import "../../styles/global.css";
+import * as project from "../../content/projects/SmartUsbHub.md";
+
+export const prerender = true;
+---
+
+<ProjectPage
+  title={project.frontmatter.title}
+  description={project.frontmatter.description}
+  image={project.frontmatter.image}
+  skills={project.frontmatter.skills}
+>
+  <project.Content />
+</ProjectPage>

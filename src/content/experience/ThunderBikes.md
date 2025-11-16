@@ -1,5 +1,5 @@
 ---
-company: "Covus Energy"
+company: "UBC ThunderBikes"
 title: "Mechanical Subteam Member"
 dateRange: "Sept 2024 – Present"
 location: "Vancouver, BC"
