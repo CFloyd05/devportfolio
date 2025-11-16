@@ -2,6 +2,7 @@
 title: "Machined Aluminum and Brass Smartphone Stand"
 description: "A test bench for analyzing op-amp stability."
 image: "/projects/253/253MainPhoto.jpg"
+imageCaption: ""
 skills: ["SolidWorks", "Laser-Cutting", "3D Printing", "Machining"]
 ---
 
