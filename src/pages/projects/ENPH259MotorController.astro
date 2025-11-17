@@ -1,0 +1,18 @@
+---
+import ProjectPage from "../../components/ProjectPage.astro";
+import "../../styles/global.css";
+import * as project from "../../content/projects/ENPH259MotorController.md";
+
+export const prerender = true;
+---
+
+<ProjectPage
+  title={project.frontmatter.title}
+  description={project.frontmatter.description}
+  image={project.frontmatter.image}
+  imageCaption={project.frontmatter.imageCaption}
+  heroWidth={project.frontmatter.heroWidth}
+  skills={project.frontmatter.skills}
+>
+  <project.Content />
+</ProjectPage>

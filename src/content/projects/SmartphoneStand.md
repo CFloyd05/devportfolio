@@ -1,17 +1,47 @@
 ---
 title: "Machined Aluminum and Brass Smartphone Stand"
-description: "A test bench for analyzing op-amp stability."
-image: "/projects/253/253MainPhoto.jpg"
+description: "Built as part of the UBC PHAS Student Machine Shop Course"
+image: "/projects/smartphoneStand/SmartphoneStandFinalAssembly.jpg"
 imageCaption: ""
-skills: ["SolidWorks", "Laser-Cutting", "3D Printing", "Machining"]
+skills: ["Machining", "Mill", "Lathe", "Water-Jet Cutter"]
 ---
 
 ## Overview
-This project focuses on analyzing the dynamic stability of operational amplifiers.
 
-![Test bench](/projects/253/253MainPhoto.jpg)
+This 
 
-## Results
-- Phase margin improved after compensation adjustment
+<figure class="max-w-xl mx-auto">
+  <img
+    src="/projects/smartphoneStand/SmartphoneStandBrassParts.jpg"
+    alt="CAD Model of our Robot"
+    class="rounded-xl shadow-lg"
+  />
+  <figcaption class="text-center text-md text-gray-500">CAD Model of our Robot</figcaption>
+</figure>
 
-![Output waveform](/projects/opamp/output.png)
+<figure class="max-w-xl mx-auto">
+  <img
+    src="/projects/smartphoneStand/SmartphoneStandFlatAluParts.jpg"
+    alt="CAD Model of our Robot"
+    class="rounded-xl shadow-lg"
+  />
+  <figcaption class="text-center text-md text-gray-500">CAD Model of our Robot</figcaption>
+</figure>
+
+<figure class="max-w-xl mx-auto">
+  <img
+    src="/projects/smartphoneStand/SmartphoneStandSmallAluParts.jpg"
+    alt="CAD Model of our Robot"
+    class="rounded-xl shadow-lg"
+  />
+  <figcaption class="text-center text-md text-gray-500">CAD Model of our Robot</figcaption>
+</figure>
+
+<figure class="max-w-xl mx-auto">
+  <img
+    src="/projects/smartphoneStand/SmartphoneStandFinalAssembly.jpg"
+    alt="CAD Model of our Robot"
+    class="rounded-xl shadow-lg"
+  />
+  <figcaption class="text-center text-md text-gray-500">CAD Model of our Robot</figcaption>
+</figure>

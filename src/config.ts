@@ -51,6 +51,14 @@ export const siteConfig = {
       image: "/projects/solderingFumeExtractor/SolderingFumeExtractorThumbnail.jpg",
       skills: ["SolidWorks", "3D printing", "Soldering"],
     },
+    {
+      name: "Closed-Loop Motor Controller",
+      description:
+        "",
+      link: "/projects/ENPH259MotorController",
+      image: "/projects/ENPH259MotorController/MotorControllerThumbnail.jpg",
+      skills: ["Circuit Construction", "Debugging"],
+    },
   ],
 
   experience: [
@@ -60,9 +68,9 @@ export const siteConfig = {
       dateRange: "Jan 2024 - Apr 2024",
       image: "/experience/corvus/CorvusLogo.png",
       bullets: [
-        "Machining",
-        "",
-        "",
+        "Designed and manufactured prototype parts for battery systems, involving extensive use of SolidWorks, thorough documentation, and mechanical aptitude",
+        "Performed various battery system tests, including tests on thermal runaway, vibrations, adhesives, and environmental sealing. Required instrumentation, and writing test plans, risk analyses, test journals, and test reports",
+        "Gained aptitude with a Tormac CNC mill and other CNC machines. Utilized conversational machining and 3D toolpaths",
       ],
       link: "/experience/CorvusEnergy",
     },
@@ -72,9 +80,9 @@ export const siteConfig = {
       dateRange: "Sep 2023 - Present",
       image: "/experience/thunderBikes/TBikesLogo.png",
       bullets: [
-        "Machining",
-        "",
-        "",
+        "Designed and Fabricated parts for UBC’s first electric race motorcycle, including a tubular subframe, battery casings, and high-voltage electronics mounts for a 400A, 110V battery",
+        "Created CAD designs and drawings in SolidWorks, emphasizing design for manufacturability, such as jigging, weldability, and ease of assembly",
+        "Performed finite element analyses and hand calculations to ensure the safety of designs",
       ],
       link: "/experience/ThunderBikes",
     },

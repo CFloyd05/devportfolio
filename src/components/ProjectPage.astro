@@ -1,13 +1,16 @@
 ---
+import type { string } from 'astro:schema';
+
 export interface Props {
   title: string;
   description?: string;
   image?: string;
+  heroWidth?: string;
   imageCaption?: string;
   skills?: string[];
 }
 
-const { title, description, image, imageCaption, skills } = Astro.props;
+const { title, description, image, imageCaption, skills, heroWidth } = Astro.props;
 ---
 
 <main class="bg-gray-50 min-h-screen w-full text-gray-900">
@@ -26,7 +29,7 @@ const { title, description, image, imageCaption, skills } = Astro.props;
           <img
             src={image}
             alt={title}
-            class="w-full rounded-xl shadow-lg object-cover"
+            class={`${Astro.props.heroWidth ?? "max-w-2xl"} mx-auto rounded-xl shadow-lg object-cover`}
           />
           {imageCaption && (
             <figcaption class="mt-2 text-sm text-gray-500 text-center">
