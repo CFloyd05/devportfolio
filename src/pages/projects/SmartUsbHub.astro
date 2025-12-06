@@ -2,17 +2,20 @@
 import ProjectPage from "../../components/ProjectPage.astro";
 import "../../styles/global.css";
 import * as project from "../../content/projects/SmartUsbHub.md";
+import RootLayout from "../../layouts/RootLayout.astro";
 
 export const prerender = true;
 ---
 
-<ProjectPage
-  title={project.frontmatter.title}
-  description={project.frontmatter.description}
-  image={project.frontmatter.image}
-  imageCaption={project.frontmatter.imageCaption}
-  heroWidth={project.frontmatter.heroWidth}
-  skills={project.frontmatter.skills}
->
-  <project.Content />
-</ProjectPage>
+<RootLayout title={project.frontmatter.title}>
+  <ProjectPage
+    title={project.frontmatter.title}
+    description={project.frontmatter.description}
+    image={project.frontmatter.image}
+    imageCaption={project.frontmatter.imageCaption}
+    heroWidth={project.frontmatter.heroWidth}
+    skills={project.frontmatter.skills}
+  >
+    <project.Content />
+  </ProjectPage>
+</RootLayout>

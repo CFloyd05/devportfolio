@@ -1,4 +1,4 @@
-export const siteConfig = {
+﻿export const siteConfig = {
   name: "Connor Floyd",
   title: "UBC Engineering Physics Student",
   description: "Portfolio website of Ryan Fitzgerald",

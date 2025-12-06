@@ -2,16 +2,19 @@
 import ExperiencePage from "../../components/ExperiencePage.astro";
 import "../../styles/global.css";
 import * as experience from "../../content/experience/CorvusEnergy.md";
+import RootLayout from "../../layouts/RootLayout.astro";
 
 export const prerender = true;
 ---
 
-<ExperiencePage
-  company={experience.frontmatter.company}
-  title={experience.frontmatter.title}
-  dateRange={experience.frontmatter.dateRange}
-  location={experience.frontmatter.location}
-  skills={experience.frontmatter.skills}
->
-  <experience.Content />
-</ExperiencePage>
+<RootLayout title={experience.frontmatter.title}>
+  <ExperiencePage
+    company={experience.frontmatter.company}
+    title={experience.frontmatter.title}
+    dateRange={experience.frontmatter.dateRange}
+    location={experience.frontmatter.location}
+    skills={experience.frontmatter.skills}
+  >
+    <experience.Content />
+  </ExperiencePage>
+</RootLayout>
