@@ -41,6 +41,7 @@
         "",
       link: "/projects/SmartphoneStand",
       image: "/projects/smartphoneStand/SmartphoneStandThumbnail.jpg",
+      tallThumbnail: true,
       skills: ["Machining", "Mill", "Lathe"],
     },
     {
@@ -57,6 +58,7 @@
         "",
       link: "/projects/ENPH259MotorController",
       image: "/projects/ENPH259MotorController/MotorControllerThumbnail.jpg",
+      tallThumbnail: true,
       skills: ["Circuit Construction", "Debugging"],
     },
   ],
@@ -94,7 +96,7 @@
       degree: "Engineering Physics",
       dateRange: "2023 - 2028",
       achievements: [
-        "GPA: 89.0%",
+        "GPA: 89.6%",
         "UBC Trek Excellence Scholarship Recipient",
       ],
     },

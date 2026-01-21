@@ -9,8 +9,8 @@
     "astro": "astro"
   },
   "dependencies": {
-    "@astrojs/markdown-remark": "^6.3.8",
-    "astro": "^5.12.3"
+    "@astrojs/markdown-remark": "^6.3.10",
+    "astro": "^5.16.6"
   },
   "devDependencies": {
     "@tailwindcss/typography": "^0.5.19",

@@ -27,17 +27,26 @@ The centre and right parts were first cut oversized with the water-jet cutter, t
 
 Before working on the lathes, I first had to make cutting tools for it. I made the folowing two tools out of cobalt steel blanks. On the left is a tool designed for long-chipping metals, such as aluminum and steel. It has an extra facet to help with chip evacuation. On the right is a tool designed for short-chipping metals such as brass. I ground these tools on the bench grinder.
 
+<figure class="max-w-xl mx-auto">
+  <img
+    src="/projects/smartphoneStand/SmartphoneStandFlatAluParts.jpg"
+    alt="Aluminum frame components"
+    class="rounded-xl shadow-lg"
+  />
+  <figcaption class="text-center text-md text-gray-500">Aluminum frame components</figcaption>
+</figure>
+
 #### Brass Shafts and Nuts
 
 Below are the brass shafts that act as the pivots of the phone stand, and the nuts that hold it together. Both parts were first made on the lathe, then wrench flats were added with the mill.
 
 <figure class="max-w-xl mx-auto">
   <img
-    src="/projects/smartphoneStand/SmartphoneStandBrassParts.jpg"
-    alt="CAD Model of our Robot"
+    src="/projects/smartphoneStand/SmartphoneStandLatheTools.jpg"
+    alt="Lathe Tooling"
     class="rounded-xl shadow-lg"
   />
-  <figcaption class="text-center text-md text-gray-500">Brass shafts and nuts</figcaption>
+  <figcaption class="text-center text-md text-gray-500">Lathe Tooling</figcaption>
 </figure>
 
 #### Remaining Aluminum Parts
@@ -47,7 +56,7 @@ The roundbar was bored out on the lathe, then the two small holes were drilled a
 <figure class="max-w-xl mx-auto">
   <img
     src="/projects/smartphoneStand/SmartphoneStandSmallAluParts.jpg"
-    alt="CAD Model of our Robot"
+    alt="Aluminum shaft sleeves, phone holding 'hooks' and wrenches"
     class="rounded-xl shadow-lg"
   />
   <figcaption class="text-center text-md text-gray-500">Aluminum shaft sleeves, phone holding 'hooks' and wrenches</figcaption>
@@ -60,7 +69,7 @@ Once all parts were machined, it was a simple assembly procedure.
 <figure class="max-w-xl mx-auto">
   <img
     src="/projects/smartphoneStand/SmartphoneStandFinalAssembly.jpg"
-    alt="CAD Model of our Robot"
+    alt="Final assembly of phone stand"
     class="rounded-xl shadow-lg"
   />
   <figcaption class="text-center text-md text-gray-500">Final assembly of phone stand</figcaption>

@@ -69,7 +69,9 @@ const hasProjects = siteConfig.projects && siteConfig.projects.length > 0;
                               {project.skills.map((skill) => (
                                 <span
                                   class={`px-2.5 sm:px-3 py-1 sm:py-1.5 bg-gray-900 text-white rounded-md sm:rounded-lg text-xs sm:text-sm font-medium transition-all duration-300 ${
-                                    project.link ? "group-hover:bg-gray-800" : ""
+                                    project.link
+                                      ? "group-hover:bg-gray-800"
+                                      : ""
                                   }`}
                                 >
                                   {skill}
@@ -100,12 +102,16 @@ const hasProjects = siteConfig.projects && siteConfig.projects.length > 0;
                           )}
 
                           {project.image && (
-                            <div class="w-full h-24 sm:h-28 md:h-36">
+                            <div
+                              class={`md:w-52 w-full md:flex-shrink-0 flex justify-start md:justify-end self-start md:self-center mt-4 md:mt-0
+                              ${project.tallThumbnail ? "h-auto" : "h-40 md:h-36"}`}
+                            >
                               <img
                                 src={project.image}
                                 alt={project.name}
-                                class="w-full h-full object-cover rounded-lg border border-gray-200 shadow-sm"
                                 loading="lazy"
+                                class={`rounded-lg border border-gray-200 shadow-sm w-auto max-w-full
+                                  ${project.tallThumbnail ? "h-auto" : "h-full object-cover"}`}
                               />
                             </div>
                           )}

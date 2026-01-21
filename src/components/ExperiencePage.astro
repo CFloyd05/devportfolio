@@ -48,8 +48,189 @@ const { company, title, dateRange, location, skills } = Astro.props;
     )}
 
     <!-- Markdown content -->
-    <article class="prose prose-lg prose-img:rounded-xl prose-img:shadow-md text-gray-800">
+    <article class="prose prose-lg text-gray-800 max-w-4xl mx-auto prose-img:rounded-xl prose-img:shadow-md">
       <slot />
     </article>
   </section>
+
+  <!-- LIGHTBOX OVERLAY -->
+  <div
+    id="lightbox"
+    class="fixed inset-0 z-50 hidden items-center justify-center bg-black/75 px-4"
+  >
+    <!-- CLOSE BUTTON -->
+    <button
+      id="lightbox-close"
+      class="absolute top-4 right-4 text-white"
+      aria-label="Close"
+    >
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        class="h-8 w-8"
+        fill="none"
+        viewBox="0 0 24 24"
+        stroke="currentColor"
+        stroke-width="2"
+        stroke-linecap="round"
+      >
+        <line x1="18" y1="6" x2="6" y2="18" />
+        <line x1="6" y1="6" x2="18" y2="18" />
+      </svg>
+    </button>
+
+    <!-- PREV ARROW -->
+    <button
+      id="lightbox-prev"
+      class="hidden sm:flex absolute left-6 text-white items-center justify-center h-12 w-12 rounded-full bg-black/40 hover:bg-black/60"
+      aria-label="Previous"
+    >
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        class="h-7 w-7"
+        fill="none"
+        viewBox="0 0 24 24"
+        stroke="currentColor"
+        stroke-width="2"
+      >
+        <polyline points="15 18 9 12 15 6" />
+      </svg>
+    </button>
+
+    <!-- NEXT ARROW -->
+    <button
+      id="lightbox-next"
+      class="hidden sm:flex absolute right-6 text-white items-center justify-center h-12 w-12 rounded-full bg-black/40 hover:bg-black/60"
+      aria-label="Next"
+    >
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        class="h-7 w-7"
+        fill="none"
+        viewBox="0 0 24 24"
+        stroke="currentColor"
+        stroke-width="2"
+      >
+        <polyline points="9 6 15 12 9 18" />
+      </svg>
+    </button>
+
+    <!-- IMAGE + CAPTION + COUNTER -->
+    <div class="max-w-4xl w-full flex flex-col items-center">
+      <img
+        id="lightbox-image"
+        class="max-h-[80vh] max-w-full mx-auto object-contain rounded-lg shadow-xl"
+        alt=""
+      />
+      <p id="lightbox-caption" class="mt-3 text-center text-sm text-gray-200"></p>
+      <p id="lightbox-counter" class="mt-1 text-center text-xs text-gray-400"></p>
+    </div>
+  </div>
+
+  <!-- SCRIPT (PLAIN JS, NO TYPESCRIPT) -->
+  <script>
+    // @ts-nocheck
+    if (typeof window !== "undefined") {
+      document.addEventListener("DOMContentLoaded", () => {
+        const lightbox = document.getElementById("lightbox");
+        const imgEl = document.getElementById("lightbox-image");
+        const captionEl = document.getElementById("lightbox-caption");
+        const counterEl = document.getElementById("lightbox-counter");
+        const btnClose = document.getElementById("lightbox-close");
+        const btnPrev = document.getElementById("lightbox-prev");
+        const btnNext = document.getElementById("lightbox-next");
+
+        let currentImages = [];
+        let index = 0;
+
+        function updateCounter() {
+          if (!counterEl || !currentImages.length) return;
+          counterEl.textContent = `${index + 1} / ${currentImages.length}`;
+        }
+
+        function show(i) {
+          const img = currentImages[i];
+          if (!img || !imgEl || !captionEl) return;
+
+          imgEl.src = img.src;
+          imgEl.alt = img.alt || "";
+          captionEl.textContent = img.dataset.caption || img.alt || "";
+          index = i;
+          updateCounter();
+        }
+
+        function open(images, i) {
+          currentImages = images;
+          show(i);
+          lightbox.classList.remove("hidden");
+          lightbox.classList.add("flex");
+          document.body.style.overflow = "hidden";
+        }
+
+        function closeLightbox() {
+          lightbox.classList.add("hidden");
+          lightbox.classList.remove("flex");
+          document.body.style.overflow = "";
+        }
+
+        // Bind galleries
+        document.querySelectorAll(".js-gallery").forEach((gallery) => {
+          const imgs = Array.from(gallery.querySelectorAll("img"));
+          imgs.forEach((img, i) => {
+            img.addEventListener("click", () => open(imgs, i));
+          });
+        });
+
+        // Close button
+        if (btnClose) {
+          btnClose.addEventListener("click", () => {
+            closeLightbox();
+          });
+        }
+
+        // Click on backdrop to close
+        if (lightbox) {
+          lightbox.addEventListener("click", (e) => {
+            if (e.target === lightbox) {
+              closeLightbox();
+            }
+          });
+        }
+
+        // Prev / next buttons
+        if (btnPrev) {
+          btnPrev.addEventListener("click", (e) => {
+            e.stopPropagation();
+            if (!currentImages.length) return;
+            const nextIndex = (index - 1 + currentImages.length) % currentImages.length;
+            show(nextIndex);
+          });
+        }
+
+        if (btnNext) {
+          btnNext.addEventListener("click", (e) => {
+            e.stopPropagation();
+            if (!currentImages.length) return;
+            const nextIndex = (index + 1) % currentImages.length;
+            show(nextIndex);
+          });
+        }
+
+        // Keyboard navigation
+        document.addEventListener("keydown", (e) => {
+          if (!lightbox || lightbox.classList.contains("hidden")) return;
+          if (!currentImages.length) return;
+
+          if (e.key === "Escape") {
+            closeLightbox();
+          } else if (e.key === "ArrowLeft") {
+            const nextIndex = (index - 1 + currentImages.length) % currentImages.length;
+            show(nextIndex);
+          } else if (e.key === "ArrowRight") {
+            const nextIndex = (index + 1) % currentImages.length;
+            show(nextIndex);
+          }
+        });
+      });
+    }
+  </script>
 </main>
