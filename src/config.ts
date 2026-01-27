@@ -40,7 +40,7 @@
       description:
         "",
       link: "/projects/SmartphoneStand",
-      image: "/projects/smartphoneStand/SmartphoneStandThumbnail.jpg",
+      image: "/projects/smartphoneStand/PhoneStandNicePic.jpg",
       tallThumbnail: true,
       skills: ["Machining", "Mill", "Lathe"],
     },

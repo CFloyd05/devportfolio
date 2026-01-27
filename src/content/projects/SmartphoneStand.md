@@ -1,7 +1,7 @@
 ---
 title: "Machined Aluminum and Brass Phone Stand"
 description: "Built as part of the UBC PHAS Student Machine Shop Course"
-image: "/projects/smartphoneStand/SmartphoneStandFinalAssembly.jpg"
+image: "/projects/smartphoneStand/PhoneStandNicePic.jpg"
 imageCaption: ""
 skills: ["Machining", "Mill", "Lathe", "Water-Jet Cutter", "Bench Grinder"]
 ---
@@ -29,7 +29,7 @@ Before working on the lathes, I first had to make cutting tools for it. I made t
 
 <figure class="max-w-xl mx-auto">
   <img
-    src="/projects/smartphoneStand/SmartphoneStandFlatAluParts.jpg"
+    src="/projects/smartphoneStand/LatheTooling.jpg"
     alt="Aluminum frame components"
     class="rounded-xl shadow-lg"
   />
@@ -42,7 +42,7 @@ Below are the brass shafts that act as the pivots of the phone stand, and the nu
 
 <figure class="max-w-xl mx-auto">
   <img
-    src="/projects/smartphoneStand/SmartphoneStandLatheTools.jpg"
+    src="/projects/smartphoneStand/SmartphoneStandBrassParts.jpg"
     alt="Lathe Tooling"
     class="rounded-xl shadow-lg"
   />
@@ -64,13 +64,13 @@ The roundbar was bored out on the lathe, then the two small holes were drilled a
 
 #### Final Assembly
 
-Once all parts were machined, it was a simple assembly procedure.
+Once all parts were machined, it was a simple assembly procedure. Nylon washers were placed on the brass shaft, to avoid metal on metal contact, and so the friction of the joints could be easily adjusted with the brass nuts.
 
 <figure class="max-w-xl mx-auto">
   <img
-    src="/projects/smartphoneStand/SmartphoneStandFinalAssembly.jpg"
+    src="/projects/smartphoneStand/PhoneStandNicePic.jpg"
     alt="Final assembly of phone stand"
     class="rounded-xl shadow-lg"
   />
   <figcaption class="text-center text-md text-gray-500">Final assembly of phone stand</figcaption>
-</figure>
+</figure> 

@@ -21,7 +21,71 @@ Corvus Energy is the worlds leading supplier of batteries for the maritime indus
 
 As part of the prototyping team at Corvus Energy, my role was to design, build, and test prototype parts for their new battery systems. My job responsibilities included: designing parts and assemblies in solidworks; manufacturing parts, often with a Tormac CNC mill or 3D printer; performing tests on various prototype parts and systems; writing thorough documentation for my designs and tests.
 
+## Skills
+
+#### Solidworks
+
+A significant amount of my time was spent designing parts in solidworks. I improved upon my skills, particuarly when working with large assemblies, and parameter based models.
+
+#### Machining and CNC
+
+One of my favorite parts of this co-op was how much time I got to spend hands-on, making parts. I got very familiar with the tools in the machine shop, especially the CNC mill. The experience I gained here greatly complimented my previous machine shop training. 
+
+I also wrote a few pieces of machining documentation for future co-ops. I created a machining guide, with a focus on the Tormac conversational machining. Additionally, I wrote instuctions on how to square a vice on the CNC mill using a dial indicator.
+
+In addition to machining, I worked extensively with 3D printers. I used both BambuLab FDM printers and resin printers.
+
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 max-w-4xl mx-auto items-center js-gallery">
+  <figure>
+    <img
+      src="/experience/corvus/blockCloseup.jpg"
+      alt="Robot"
+      class="w-full h-auto object-cover rounded-lg border border-gray-300 shadow-sm cursor-pointer
+            transform transition duration-200 hover:-translate-y-1 hover:shadow-xl hover:border-gray-400"
+      data-caption="Block machined for environmental sealing test."
+      />
+  </figure>
+  
+  <figure>
+    <img
+      src="/experience/corvus/mandrelPic.jpg"
+      alt="Robot"
+      class="w-full h-full object-cover rounded-lg border border-gray-300 shadow-sm cursor-pointer
+            transform transition duration-200 hover:-translate-y-1 hover:shadow-xl hover:border-gray-400"
+      data-caption="PEM stud mandrel made using conversational machining. First made from aluminum, then steel."
+    />
+  </figure>
+
+  <figure>
+    <img
+      src="/experience/corvus/endBlocks.jpg"
+      alt="Robot"
+      class="w-full h-full object-cover rounded-lg border border-gray-300 shadow-sm cursor-pointer
+            transform transition duration-200 hover:-translate-y-1 hover:shadow-xl hover:border-gray-400"
+      data-caption="Blocks made for prototype battery."
+    />
+  </figure>
+
+  <figure>
+    <img
+      src="/experience/corvus/weldingBlocks.jpg"
+      alt="Robot"
+      class="w-full h-full object-cover rounded-lg border border-gray-300 shadow-sm cursor-pointer
+            transform transition duration-200 hover:-translate-y-1 hover:shadow-xl hover:border-gray-400"
+      data-caption="Wooden blocks for laser-welder fixturing, made on CNC router. Created 3D toolpaths in SolidWorks Cam."
+    />
+  </figure>
+</div>
+
+#### Documentation and Presentation Skills
+
+I greatly improved upon my documentation skills through this co-op. For every single task I did, I wrote documentation of some form. For tests, I would write a plan, a test journal, and a test report. For large projects, I would write documentation going through the design and manufacturing process. For small tasks, I would still write about them in my bi-weekly spring recaps. At the end of each sprint, I would present the work I did to my team and some of the engineering management.
+
+
+
 ## My Projects
+
+Unfortunately, I'm unable to talk about most of the work I did, due to IP issues. I've included a few of my projects below, but don't have anything about most of the work I did on our prototype batteries.
 
 #### Battery Lifting Jig
 
@@ -55,7 +119,9 @@ I machined a few custom parts on the CNC mill, and 3D printed some of the non-st
 
 #### Battery Testing: Short-Circuit, Thermal Runaway, Vibration
 
+I performed and assisted with a variety of tests during my co-op. The most notable of which was a battery short-circuit test. For this test, I analyzed the risk of shorting battery cells at different states of charge, and therefore at different voltages. For this test, I first wrote a test plan, and designed a remote actuation system to start the test. I then wrote a safe work procedure, and assembled a test battery module. I instrumented the module with thermocouples and voltage pickups, and took measurements such as resistances between different areas of the battery module. Lastly, I ran the test, keeping a test journal, and documented my results in a test report.
 
+I also assisted with thermal runaway testing and vibration testing. This involved building the systems being tested, managing documentation and data-aquisition, instrumentation, and visiting third-party labs. I wrote a test plan to charecterize the performance of different thermal insulators, however my co-op term ended before that was performed.
 
 #### Adhesive Testing
 
@@ -102,7 +168,7 @@ I also assisted in shear tests of adhesive samples, and charecterization of adhe
 
 #### Pneumatic Press
 
-I designed a pneumatic press to be used in the assembly of battery prototypes.
+This is a pneumatic press I designed to be used in the assembly of battery prototypes.
 
 <figure class="max-w-xl mx-auto">
   <img
