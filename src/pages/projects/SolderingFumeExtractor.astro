@@ -1,0 +1,21 @@
+---
+import ProjectPage from "../../components/ProjectPage.astro";
+import "../../styles/global.css";
+import * as project from "../../content/projects/SolderingFumeExtractor.md";
+import RootLayout from "../../layouts/RootLayout.astro";
+
+export const prerender = true;
+---
+
+<RootLayout title={project.frontmatter.title}>
+  <ProjectPage
+    title={project.frontmatter.title}
+    description={project.frontmatter.description}
+    image={project.frontmatter.image}
+    imageCaption={project.frontmatter.imageCaption}
+    heroWidth={project.frontmatter.heroWidth}
+    skills={project.frontmatter.skills}
+  >
+    <project.Content />
+  </ProjectPage>
+</RootLayout>

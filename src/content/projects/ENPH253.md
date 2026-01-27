@@ -5,7 +5,7 @@ image: "/projects/ENPH253/253News.jpg"
 imageCaption: "Our robot was featured on a local news station!"
 skills: ["SolidWorks", "Laser-Cutting", "3D Printing", "Machining"]
 ---
-
+Final course grade: 93%
 ## Overview
 
 The goal of the competition was to build an autonomous robot to 

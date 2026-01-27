@@ -8,17 +8,17 @@ skills: ["Circuit Design", "Soldering", "CAD", "3D Printing"]
 
 ## Overview
 
-The goal of this project was to create a USB hub that could power LED lights via a Google Home. :contentReference[oaicite:2]{index=2}
+**The Problem:** I have several USB powered LED lights for my bedroom, which I never used for two reasons. 1) It's incovenient to need to plug in usb cables to turn the lights on. It's an eyesore to have extra cables lying around, but if I hide them, such as with a power bar under my desk, they're difficult to reach. 2) I often don't have USB ports available for extra lights.
 
-The final system lets a voice command toggle multiple 5V outputs. It uses an ESP32 for the real time control of the USB ports, and a Raspberry Pi for the home automation and cloud bridge that connects Google Assistant to the local network.
+**The Solution** I created a smart USB hub that can control several LED lights via a Google home, requiring just a single USB port for power.
 
-#### System Architecture
+## System Architecture
 
-The system consists of a Google Home, Raspberry Pi, and ESP32, connected to a BJT based circuit to power USB ports. :contentReference[oaicite:3]{index=3}
+The system consists of a Google Home, Raspberry Pi, and ESP32, connected to a BJT based circuit to power USB ports.
 
-Conceptually, the flow is:
+The system flow is:
 
-Google Assistant command  
+→ Google Assistant command  
 → cloud bridge  
 → home automation server on Raspberry Pi  
 → MQTT message  
@@ -28,19 +28,12 @@ Google Assistant command
 
 <figure class="max-w-xl mx-auto">
   <img
-    src="/projects/smartUsbHub/SmartUsbHubArchitecture.jpg"
+    src="/projects/smartUsbHub/systemDiagram.png"
     alt="Smart USB hub system architecture diagram"
     class="rounded-xl shadow-lg"
   />
-  <figcaption class="text-center text-md text-gray-500">System architecture: Google Assistant to Raspberry Pi to ESP32 to switched 5V USB outputs</figcaption>
+  <figcaption class="text-center text-md text-gray-500">Smart USB hub system architecture diagram</figcaption>
 </figure>
-
-#### Project Goals
-
-- Control multiple 5V LED outputs from a Google Home
-- Keep the switching electronics robust and serviceable (separate logic and power stages)
-- Build a clean enclosure with CAD and 3D printing
-- Use a simple, standard messaging protocol between the Pi and the ESP32 (MQTT)
 
 ## Electronics
 

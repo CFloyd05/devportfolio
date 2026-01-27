@@ -39,7 +39,7 @@ In addition to machining, I worked extensively with 3D printers. I used both Bam
   <figure>
     <img
       src="/experience/corvus/blockCloseup.jpg"
-      alt="Robot"
+      alt="Block machined for environmental sealing test"
       class="w-full h-auto object-cover rounded-lg border border-gray-300 shadow-sm cursor-pointer
             transform transition duration-200 hover:-translate-y-1 hover:shadow-xl hover:border-gray-400"
       data-caption="Block machined for environmental sealing test."
@@ -49,7 +49,7 @@ In addition to machining, I worked extensively with 3D printers. I used both Bam
   <figure>
     <img
       src="/experience/corvus/mandrelPic.jpg"
-      alt="Robot"
+      alt="PEM stud mandrel made using conversational machining"
       class="w-full h-full object-cover rounded-lg border border-gray-300 shadow-sm cursor-pointer
             transform transition duration-200 hover:-translate-y-1 hover:shadow-xl hover:border-gray-400"
       data-caption="PEM stud mandrel made using conversational machining. First made from aluminum, then steel."
@@ -59,7 +59,7 @@ In addition to machining, I worked extensively with 3D printers. I used both Bam
   <figure>
     <img
       src="/experience/corvus/endBlocks.jpg"
-      alt="Robot"
+      alt="Blocks made for prototype battery"
       class="w-full h-full object-cover rounded-lg border border-gray-300 shadow-sm cursor-pointer
             transform transition duration-200 hover:-translate-y-1 hover:shadow-xl hover:border-gray-400"
       data-caption="Blocks made for prototype battery."
@@ -69,7 +69,7 @@ In addition to machining, I worked extensively with 3D printers. I used both Bam
   <figure>
     <img
       src="/experience/corvus/weldingBlocks.jpg"
-      alt="Robot"
+      alt="Wooden blocks for laser-welder fixturing"
       class="w-full h-full object-cover rounded-lg border border-gray-300 shadow-sm cursor-pointer
             transform transition duration-200 hover:-translate-y-1 hover:shadow-xl hover:border-gray-400"
       data-caption="Wooden blocks for laser-welder fixturing, made on CNC router. Created 3D toolpaths in SolidWorks Cam."
@@ -93,7 +93,7 @@ Unfortunately, I'm unable to talk about most of the work I did, due to IP issues
   <figure>
     <img
       src="/experience/corvus/liftingClawCAD.jpg"
-      alt="Robot"
+      alt="CAD of lifting jig"
       class="w-full h-auto object-cover rounded-lg border border-gray-300 shadow-sm cursor-pointer
             transform transition duration-200 hover:-translate-y-1 hover:shadow-xl hover:border-gray-400"
       data-caption="CAD of lifting jig"
@@ -104,7 +104,7 @@ Unfortunately, I'm unable to talk about most of the work I did, due to IP issues
   <figure>
     <img
       src="/experience/corvus/flyingWhale_blurred.png"
-      alt="Robot"
+      alt="Lifting jig in action"
       class="w-full h-full object-cover rounded-lg border border-gray-300 shadow-sm cursor-pointer
             transform transition duration-200 hover:-translate-y-1 hover:shadow-xl hover:border-gray-400"
       data-caption="Lifting jig in action"
