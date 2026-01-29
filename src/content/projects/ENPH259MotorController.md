@@ -46,7 +46,7 @@ A 5 Hz square wave is used as a timing reference. The LATCH signal is a square w
       alt="Circuit Diagram of LATCH and RESET signal generator"
       class="w-full h-auto object-cover rounded-lg border border-gray-300 shadow-sm cursor-pointer
             transform transition duration-200 hover:-translate-y-1 hover:shadow-xl hover:border-gray-400"
-      data-caption="CAD of lifting jig"
+      data-caption="Circuit Diagram of LATCH and RESET signal generator"
       />
       <figcaption class="text-center text-md text-gray-500">Circuit Diagram of LATCH and RESET signal generator</figcaption>
   </figure>
@@ -57,7 +57,7 @@ A 5 Hz square wave is used as a timing reference. The LATCH signal is a square w
       alt="Annotated LATCH and RESET signal generator circuit"
       class="w-full h-full object-cover rounded-lg border border-gray-300 shadow-sm cursor-pointer
             transform transition duration-200 hover:-translate-y-1 hover:shadow-xl hover:border-gray-400"
-      data-caption="Lifting jig in action"
+      data-caption="Annotated LATCH and RESET signal generator circuit"
     />
     <figcaption class="text-center text-md text-gray-500">Annotated LATCH and RESET signal generator circuit</figcaption>
   </figure>
@@ -74,7 +74,7 @@ The counter measures speed by counting clock pulses produced by the motor sensor
       alt="Circuit Diagram of Counter and D-latch"
       class="w-full h-auto object-cover rounded-lg border border-gray-300 shadow-sm cursor-pointer
             transform transition duration-200 hover:-translate-y-1 hover:shadow-xl hover:border-gray-400"
-      data-caption="CAD of lifting jig"
+      data-caption="Circuit Diagram of Counter and D-latch"
       />
       <figcaption class="text-center text-md text-gray-500">Circuit Diagram of Counter and D-latch</figcaption>
   </figure>
@@ -85,7 +85,7 @@ The counter measures speed by counting clock pulses produced by the motor sensor
       alt="Annotated Counter and D-latch Circuit"
       class="w-full h-full object-cover rounded-lg border border-gray-300 shadow-sm cursor-pointer
             transform transition duration-200 hover:-translate-y-1 hover:shadow-xl hover:border-gray-400"
-      data-caption="Lifting jig in action"
+      data-caption="Annotated Counter and D-latch Circuit"
     />
     <figcaption class="text-center text-md text-gray-500">Annotated Counter and D-latch Circuit</figcaption>
   </figure>
@@ -104,7 +104,7 @@ A buffer op-amp is used after the DAC so it's output is not loaded by the follow
       alt="Circuit Diagram of DAC and Buffer"
       class="w-full h-auto object-cover rounded-lg border border-gray-300 shadow-sm cursor-pointer
             transform transition duration-200 hover:-translate-y-1 hover:shadow-xl hover:border-gray-400"
-      data-caption="CAD of lifting jig"
+      data-caption="Circuit Diagram of DAC and Buffer"
       />
       <figcaption class="text-center text-md text-gray-500">Circuit Diagram of DAC and Buffer</figcaption>
   </figure>
@@ -115,7 +115,7 @@ A buffer op-amp is used after the DAC so it's output is not loaded by the follow
       alt="Annotated DAC Circuit"
       class="w-full h-full object-cover rounded-lg border border-gray-300 shadow-sm cursor-pointer
             transform transition duration-200 hover:-translate-y-1 hover:shadow-xl hover:border-gray-400"
-      data-caption="Lifting jig in action"
+      data-caption="Annotated DAC Circuit"
     />
     <figcaption class="text-center text-md text-gray-500">Annotated DAC Circuit</figcaption>
   </figure>
@@ -125,7 +125,7 @@ A buffer op-amp is used after the DAC so it's output is not loaded by the follow
       alt="Annotated Buffer Circuit"
       class="w-full h-full object-cover rounded-lg border border-gray-300 shadow-sm cursor-pointer
             transform transition duration-200 hover:-translate-y-1 hover:shadow-xl hover:border-gray-400"
-      data-caption="Lifting jig in action"
+      data-caption="Annotated Buffer Circuit"
     />
     <figcaption class="text-center text-md text-gray-500">Annotated Buffer Circuit</figcaption>
   </figure>
@@ -142,7 +142,7 @@ This section compares the output volage from the DAC to a set-point voltage cont
       alt="Circuit Diagram of Op-Amp Error Signal Amplifier"
       class="w-full h-auto object-cover rounded-lg border border-gray-300 shadow-sm cursor-pointer
             transform transition duration-200 hover:-translate-y-1 hover:shadow-xl hover:border-gray-400"
-      data-caption="CAD of lifting jig"
+      data-caption="Circuit Diagram of Op-Amp Error Signal Amplifier"
       />
       <figcaption class="text-center text-md text-gray-500">Circuit Diagram of Op-Amp Error Signal Amplifier</figcaption>
   </figure>
@@ -153,7 +153,7 @@ This section compares the output volage from the DAC to a set-point voltage cont
       alt="Annotated Error Signal Amplifier Circuit"
       class="w-full h-full object-cover rounded-lg border border-gray-300 shadow-sm cursor-pointer
             transform transition duration-200 hover:-translate-y-1 hover:shadow-xl hover:border-gray-400"
-      data-caption="Lifting jig in action"
+      data-caption="Annotated Error Signal Amplifier Circuit"
     />
     <figcaption class="text-center text-md text-gray-500">Annotated Error Signal Amplifier Circuit</figcaption>
   </figure>
@@ -172,7 +172,7 @@ Attached to the motor is a slotted disc, so that it's rotation can be measured w
       alt="Circuit Diagram of Motor Sensor and Driver"
       class="w-full h-auto object-cover rounded-lg border border-gray-300 shadow-sm cursor-pointer
             transform transition duration-200 hover:-translate-y-1 hover:shadow-xl hover:border-gray-400"
-      data-caption="CAD of lifting jig"
+      data-caption="Circuit Diagram of Motor Sensor and Driver"
       />
       <figcaption class="text-center text-md text-gray-500">Circuit Diagram of Motor Sensor and Driver</figcaption>
   </figure>
@@ -183,7 +183,7 @@ Attached to the motor is a slotted disc, so that it's rotation can be measured w
       alt="Annotated Motor Driver Circuit"
       class="w-full h-full object-cover rounded-lg border border-gray-300 shadow-sm cursor-pointer
             transform transition duration-200 hover:-translate-y-1 hover:shadow-xl hover:border-gray-400"
-      data-caption="Lifting jig in action"
+      data-caption="Annotated Motor Driver Circuit"
     />
     <figcaption class="text-center text-md text-gray-500">Annotated Motor Driver Circuit</figcaption>
   </figure>
@@ -193,7 +193,7 @@ Attached to the motor is a slotted disc, so that it's rotation can be measured w
       alt="Annotated Motor Sensor Circuit"
       class="w-full h-full object-cover rounded-lg border border-gray-300 shadow-sm cursor-pointer
             transform transition duration-200 hover:-translate-y-1 hover:shadow-xl hover:border-gray-400"
-      data-caption="Lifting jig in action"
+      data-caption="Annotated Motor Sensor Circuit"
     />
     <figcaption class="text-center text-md text-gray-500">Annotated Motor Sensor Circuit</figcaption>
   </figure>

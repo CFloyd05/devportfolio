@@ -32,7 +32,7 @@
       description:
         "",
       link: "/projects/SmartUsbHub",
-      image: "/projects/smartUsbHub/SmartUsbHubThumbnail.jpg",
+      image: "/projects/smartUsbHub/usbThumbnail.jpg",
       skills: ["Circuit Design", "ESP32", "Raspberry Pi", "Soldering", "CAD", "3D Printing"],
     },
     {
@@ -45,14 +45,6 @@
       skills: ["Machining", "Mill", "Lathe"],
     },
     {
-      name: "Soldering Fume Extractor",
-      description:
-        "",
-      link: "/projects/SolderingFumeExtractor",
-      image: "/projects/solderingFumeExtractor/SolderingFumeExtractorThumbnail.jpg",
-      skills: ["SolidWorks", "3D printing", "Soldering"],
-    },
-    {
       name: "Closed-Loop Motor Controller",
       description:
         "",
@@ -60,6 +52,14 @@
       image: "/projects/ENPH259MotorController/MotorControllerThumbnail.jpg",
       tallThumbnail: true,
       skills: ["Circuit Construction", "Debugging"],
+    },
+    {
+      name: "Soldering Fume Extractor",
+      description:
+        "",
+      link: "/projects/SolderingFumeExtractor",
+      image: "/projects/fumeExtractor/frontPic.jpg",
+      skills: ["SolidWorks", "3D printing", "Soldering"],
     },
   ],
 

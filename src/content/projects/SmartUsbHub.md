@@ -1,7 +1,7 @@
 ---
 title: "Smart USB Hub"
 description: "A Google Assistant compatible USB hub for LED lights"
-image: "/projects/253/253MainPhoto.jpg"
+image: "/projects/smartUsbHub/usbThumbnail.jpg"
 imageCaption: ""
 skills: ["Circuit Design", "Soldering", "CAD", "3D Printing"]
 ---
@@ -35,99 +35,100 @@ The system flow is:
   <figcaption class="text-center text-md text-gray-500">Smart USB hub system architecture diagram</figcaption>
 </figure>
 
-## Electronics
 
-#### Switching Circuit
+## BJT Circuit and USB Outputs
 
-The ESP32 GPIO pins cannot drive USB loads directly, so each port is controlled through a transistor switching stage. This stage acts like an electronic switch that turns a port on or off based on a logic signal from the ESP32.
+The ESP32 GPIO pins cannot drive the USB loads directly, so each port is controlled through a transistor switching stage. This stage acts like an electronic switch that turns a port on or off based on a signal from the ESP32.
 
-I designed and soldered a custom transistor based board for this, which kept the wiring clean and made the final assembly much easier to debug.
+I designed and soldered a custom transistor based board for this. I chose to use the 2N2222 BJT for this, as it was easy to source, inexpensive, and met all my electrical requirements. Below is a Schematic I made in KiCad, and a picture of the circuit. I included the 10 ohm resistors to limit the collector current. This will dissipate power, and the lights won't receive the full 5 volts; however, since I didn't have any information on the current draw of the lights, I decided it was worth it to protect the BJTs. I haven't noticed any issues with having the resistor in the current path. 
 
-<figure class="max-w-xl mx-auto">
-  <img
-    src="/projects/smartUsbHub/SmartUsbHubSwitchingBoard.jpg"
-    alt="Transistor switching board for USB outputs"
-    class="rounded-xl shadow-lg"
-  />
-  <figcaption class="text-center text-md text-gray-500">Custom transistor switching stage for the 5V USB outputs</figcaption>
-</figure>
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-6 max-w-4xl mx-auto items-center js-gallery">
+  <figure>
+    <img
+      src="\projects\smartUsbHub/BJTSchematic.jpg"
+      alt="CAD of 3D Printed Enclosure"
+      class="w-full h-auto object-cover rounded-lg border border-gray-300 shadow-sm cursor-pointer
+            transform transition duration-200 hover:-translate-y-1 hover:shadow-xl hover:border-gray-400"
+      data-caption="Schematic of BJT Switching Circuit"
+      />
+      <figcaption class="text-center text-md text-gray-500">Schematic of BJT Switching Circuit</figcaption>
+  </figure>
 
-#### Power and USB Outputs
+  <figure>
+    <img
+      src="/projects/smartUsbHub/circuitCloseup.jpg"
+      alt="Transistor switching board for USB outputs"
+      class="w-full h-auto object-cover rounded-lg border border-gray-300 shadow-sm cursor-pointer
+              transform transition duration-200 hover:-translate-y-1 hover:shadow-xl hover:border-gray-400"
+      data-caption="Finished Circuit in Enclosure"
+    />
+    <figcaption class="text-center text-md text-gray-500">Finished Circuit in Enclosure</figcaption>
+  </figure>
+</div>
 
-The hub is designed around 5V outputs intended for LED loads. Each USB port is treated as an independently switched 5V rail, so different lights can be controlled separately.
+There are two "types" of USB ports in the hub. The first three are simple on/off ports; they have an NPN transistor on the low side of the load, allowing them to be turned on or off. The remaining ports are for lights with an in-line controller. When these lights are plugged in, they do not turn on automatically, you need to press a button on the controller or remote. To make them controllable by my Google Home, I decided to have the controller always powered, with the BJT switching circuit between the controller and the light. I once again used an NPN transistor on the low side of the load. Below is a visualization of how this "passthrough" circuit works.
 
-<figure class="max-w-xl mx-auto">
-  <img
-    src="/projects/smartUsbHub/SmartUsbHubWiring.jpg"
-    alt="Internal wiring and power routing for the smart USB hub"
-    class="rounded-xl shadow-lg"
-  />
-  <figcaption class="text-center text-md text-gray-500">Internal wiring layout with separated logic and power routing</figcaption>
-</figure>
+<div class="grid grid-cols-1 gap-6 max-w-lg mx-auto items-center js-gallery">
+  <figure>
+    <img
+      src="\projects\smartUsbHub/passthroughDiagram.jpg"
+      alt="CAD of 3D Printed Enclosure"
+      class="w-full h-auto object-cover rounded-lg border border-gray-300 shadow-sm cursor-pointer
+            transform transition duration-200 hover:-translate-y-1 hover:shadow-xl hover:border-gray-400"
+      data-caption="Visualization of Passthrough USB Ports"
+      />
+      <figcaption class="text-center text-md text-gray-500">Visualization of Passthrough USB Ports</figcaption>
+  </figure>
+</div>
 
-## Enclosure Design
-
-#### CAD and 3D Printing
-
-I designed an enclosure in CAD and 3D printed it to house the ESP32, the switching board, and the USB ports. The goal was to make it feel like a single finished product rather than a prototype, with cable routing and mounting points planned from the start.
-
-<figure class="max-w-xl mx-auto">
-  <img
-    src="/projects/smartUsbHub/SmartUsbHubCAD.jpg"
-    alt="CAD model of the smart USB hub enclosure"
-    class="rounded-xl shadow-lg"
-  />
-  <figcaption class="text-center text-md text-gray-500">CAD model used to design the enclosure and mounting features</figcaption>
-</figure>
-
-<figure class="max-w-xl mx-auto">
-  <img
-    src="/projects/smartUsbHub/SmartUsbHubPrintedCase.jpg"
-    alt="3D printed smart USB hub enclosure"
-    class="rounded-xl shadow-lg"
-  />
-  <figcaption class="text-center text-md text-gray-500">3D printed enclosure during assembly</figcaption>
-</figure>
 
 ## Software and Integration
 
-#### Raspberry Pi Home Automation Server and MQTT
+#### Raspberry Pi Home Automation Server
 
-A Raspberry Pi acts as the local server for automation logic. It runs an MQTT broker, which is the messaging layer used to send simple commands to the ESP32 like turning a specific port on or off.
+A Raspberry Pi acts as the local server for automation logic. It runs openHABian, a linux OS optimized for home automation. It reveices commands from a cloud bridge, and sends commands to the ESP32.
 
-This setup kept the ESP32 firmware lightweight, since it only needs to subscribe to a few MQTT topics and apply the requested output states.
+#### MQTT Messages
 
-<figure class="max-w-xl mx-auto">
-  <img
-    src="/projects/smartUsbHub/SmartUsbHubMQTT.jpg"
-    alt="MQTT message flow from Raspberry Pi to ESP32"
-    class="rounded-xl shadow-lg"
-  />
-  <figcaption class="text-center text-md text-gray-500">MQTT message flow used to command the ESP32</figcaption>
-</figure>
+The Raspberry Pi communicates to the ESP32, using the MQTT protocol. The Pi runs an MQTT broker, which hosts 'topics' that devices can publish and subscribe to. There is a topic for each light, which the Pi publishes on/off commands to. The ESP32 is subscribed to those topics, so it can see when a new command has been published to a topic.
+
+
+#### ESP32 Firmware
+
+I wrote a faily simple firmware for the ESP32. During setup, it connects to my local network and the MQTT broker. I also added code to reconnect to these automatically if connection is ever lost. The ESP will then continuously listen to the MQTT topics. When the ESP detects a new message, it will initiate a digitalWrite to the pin associated with the correct USB port.
+
 
 #### Google Assistant Cloud Bridge
 
-To connect Google Assistant to my local server, I integrated a cloud based bridge that forwards voice commands into my home automation system. From there, the Pi publishes the corresponding MQTT messages to the ESP32.
+To connect Google Assistant to my local server I integrated a cloud based bridge, openHAB Cloud, that forwards voice commands into my home automation system. OpenHAB Cloud integrates nicely into the Google Assistant exosystem, as well as my local home automation server.
 
-The key idea is that the cloud piece only has to translate voice intent into a clean internal command. Everything after that happens locally on my network.
+## Enclosure Design
+
+I designed an enclosure in SolidWorks and 3D printed it to house all the components. It's made from two parts, fastened together with heat-set inserts and m4 bolts. I added standoffs for the ESP32 and BJT board, which are held in place with additional hardware.
+
+<div class="grid grid-cols-1 gap-6 max-w-2xl mx-auto items-center js-gallery">
+  <figure>
+    <img
+      src="\projects\smartUsbHub/enclosureCAD.jpg"
+      alt="CAD of 3D Printed Enclosure"
+      class="w-full h-auto object-cover rounded-lg border border-gray-300 shadow-sm cursor-pointer
+            transform transition duration-200 hover:-translate-y-1 hover:shadow-xl hover:border-gray-400"
+      data-caption="CAD of 3D Printed Enclosure"
+      />
+      <figcaption class="text-center text-md text-gray-500">CAD of 3D Printed Enclosure</figcaption>
+  </figure>
+</div>
+
 
 ## Results
 
-The finished hub successfully controls 5V LED lights through Google Assistant voice commands. Once it was configured, it behaved like a normal smart home device, except the hardware and control path were fully custom.
+The finished hub successfully controls 5V LED lights through Google Assistant voice commands. Once it was configured, it behaved like a normal smart home device, except the hardware and control path were fully custom. The system has proven to be exceptionally robust. After resolving some intial sleep issues, I've never needed to debug or fix the system. There are no issues with unplugging any of the components, such as the USB hub, the Pi server, or my local network. Once they're all powered back on, the system will reconnect automatically.
 
 <figure class="max-w-xl mx-auto">
   <img
-    src="/projects/smartUsbHub/SmartUsbHubFinal.jpg"
-    alt="Final assembled smart USB hub"
+    src="/projects/smartUsbHub/usbThumbnail.jpg"
+    alt="Smart USB Hub"
     class="rounded-xl shadow-lg"
   />
-  <figcaption class="text-center text-md text-gray-500">Final assembled hub</figcaption>
+  <figcaption class="text-center text-md text-gray-500">Smart USB Hub</figcaption>
 </figure>
-
-## What I’d Improve Next
-
-- Add per port current monitoring or a fuse strategy to better protect against shorts
-- Move from a prototype switching board to a small PCB for easier replication
-- Add status LEDs per port on the enclosure for quick debugging
-- Improve the software side with clearer device states (on, off, unavailable) reported back to the server
