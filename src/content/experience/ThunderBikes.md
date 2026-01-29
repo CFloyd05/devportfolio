@@ -1,7 +1,7 @@
 ---
 company: "UBC ThunderBikes"
-title: "Mechanical Subteam Member"
-dateRange: "Sept 2024 – Present"
+title: "Co-Captain"
+dateRange: "Sept 2023 – Present"
 location: "Vancouver, BC"
 skills:
   - Drivetrain Design
