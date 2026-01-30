@@ -133,27 +133,27 @@ const hasResume = !!siteConfig.resumeUrl;
             About
           </a>
 
-          {hasProjects && (
-            <a href="#projects" class="text-sm text-gray-600 hover:text-gray-800 transition-colors">
-              Projects
-            </a>
-          )}
-
           {hasExperience && (
             <a href="#experience" class="text-sm text-gray-600 hover:text-gray-800 transition-colors">
               Experience
             </a>
           )}
 
-          {hasResume && (
-            <a href="#resume" class="text-sm text-gray-600 hover:text-gray-800 transition-colors">
-              Resume
+          {hasProjects && (
+            <a href="#projects" class="text-sm text-gray-600 hover:text-gray-800 transition-colors">
+              Projects
             </a>
           )}
 
           {hasEducation && (
             <a href="#education" class="text-sm text-gray-600 hover:text-gray-800 transition-colors">
               Education
+            </a>
+          )}
+
+          {hasResume && (
+            <a href="#resume" class="text-sm text-gray-600 hover:text-gray-800 transition-colors">
+              Resume
             </a>
           )}
         </nav>
