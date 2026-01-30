@@ -1,25 +1,95 @@
 ---
-company: "UBC ThunderBikes"
-title: "Co-Captain"
+title: "UBC ThunderBikes - Co-Captain"
+image: "/experience/thunderBikes/bike.jpg"
+imageCaption: "The team's previous motorcycle project"
 dateRange: "Sept 2023 – Present"
 location: "Vancouver, BC"
 skills:
-  - Drivetrain Design
   - SolidWorks
   - Prototyping
   - Team Collaboration
+  - Welding
+  - Machining
 ---
 
 ## Overview
 
-Write a short paragraph about what you did in this role, what the team is, and your main responsibilities.
+The UBC ThunderBikes is an engineering design team dedicated to building and racing electric motorcycles. We're excited to be competing in MotoStudent, taking place during 2027 in Spain. For this competition, we are building a brand new motorcycle from scratch.
 
-## Highlights
+This is my third year on the team, and I am excited to be filling the role of co-captain. As co-captain, I oversee the mechanical and aerodynamics teams. I manage the day to day activities of the team and provide input and guidance to our designs.
 
-- Designed and iterated on the drivetrain for a small chemical-powered car.
-- Worked with other subteams to integrate mechanical and chemical systems.
-- Helped prototype parts using 3D printing and simple machining.
 
-## What I Learned
+## Previous Technical Work
 
-Talk about concrete skills, tools, and lessons you want to show off.
+Prior to my time as co-captain, I was on the mechanical subteam. I gained valuable skills, such as CAD, making engineering drawings, and collabration within an engineering context.
+
+I also did a quite a bit of metal-work. I used equipment such as water-jet cutters, MIG welders, angle grinders, and press-breaks. I learned to design for manufacturability and assembly, and include tolerancing into my designs.
+
+
+<div class="grid grid-cols-1 md:grid-cols-2 gap-3 js-gallery">
+  <figure>
+    <img
+      src="/experience/thunderBikes/frameMounts.jpg"
+      alt="Mounts I designed for the Bike's Subframe"
+      class="w-full h-auto object-cover rounded-lg border border-gray-300 shadow-sm cursor-pointer
+            transform transition duration-200 hover:-translate-y-1 hover:shadow-xl hover:border-gray-400"
+      data-caption="Mounts I designed for the Bike's Subframe"
+      />
+      <figcaption class="text-center text-md text-gray-500">Mounts I designed for the Bike's Subframe</figcaption>
+  </figure>
+
+  <figure>
+    <img
+      src="/experience/thunderBikes/frameMountFEA.jpg"
+      alt="I Performed Some Basic FEAs on the Frame Mounting Points"
+      class="w-full h-auto object-cover rounded-lg border border-gray-300 shadow-sm cursor-pointer
+            transform transition duration-200 hover:-translate-y-1 hover:shadow-xl hover:border-gray-400"
+      data-caption="I Performed Some Basic FEAs on the Frame Mounting Points"
+      />
+      <figcaption class="text-center text-md text-gray-500">I Performed Some Basic FEAs on the Frame Mounting Points</figcaption>
+  </figure>
+
+  <figure>
+    <img
+      src="/experience/thunderBikes/hoseConnector.jpg"
+      alt="A Hose Connector I Machined for the Cooling System"
+      class="w-full h-auto object-cover rounded-lg border border-gray-300 shadow-sm cursor-pointer
+            transform transition duration-200 hover:-translate-y-1 hover:shadow-xl hover:border-gray-400"
+      data-caption="A Hose Connector I Machined for the Cooling System"
+      />
+      <figcaption class="text-center text-md text-gray-500">A Hose Connector I Machined for the Cooling System</figcaption>
+  </figure>
+
+  <figure>
+    <img
+      src="/experience/thunderBikes/paint.jpg"
+      alt="I was Responsible for Painting the Bike"
+      class="w-full h-auto object-cover rounded-lg border border-gray-300 shadow-sm cursor-pointer
+            transform transition duration-200 hover:-translate-y-1 hover:shadow-xl hover:border-gray-400"
+      data-caption="I was Responsible for Painting the Bike"
+      />
+      <figcaption class="text-center text-md text-gray-500">I was Responsible for Painting the Bike</figcaption>
+  </figure>
+
+  <figure>
+    <img
+      src="/experience/thunderBikes/skeletalSide.jpg"
+      alt="View of the Bike's Custom Subframe and Internals"
+      class="w-full h-auto object-cover rounded-lg border border-gray-300 shadow-sm cursor-pointer
+            transform transition duration-200 hover:-translate-y-1 hover:shadow-xl hover:border-gray-400"
+      data-caption="View of the Bike's Custom Subframe and Internals"
+      />
+      <figcaption class="text-center text-md text-gray-500">View of the Bike's Custom Subframe and Internals</figcaption>
+  </figure>
+
+  <figure>
+    <img
+      src="/experience/thunderBikes/internalStructure.jpg"
+      alt="The Internal Battery Case and Subframe Structure"
+      class="w-full h-auto object-cover rounded-lg border border-gray-300 shadow-sm cursor-pointer
+            transform transition duration-200 hover:-translate-y-1 hover:shadow-xl hover:border-gray-400"
+      data-caption="The Internal Battery Case and Subframe Structure"
+      />
+      <figcaption class="text-center text-md text-gray-500">The Internal Battery Case and Subframe Structure</figcaption>
+  </figure>
+</div>

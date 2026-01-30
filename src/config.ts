@@ -98,6 +98,7 @@
       achievements: [
         "GPA: 89.6%",
         "UBC Trek Excellence Scholarship Recipient",
+        "Transcript Avaliable Upon Request",
       ],
     },
   ],

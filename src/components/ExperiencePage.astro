@@ -4,10 +4,13 @@ export interface Props {
   title: string;
   dateRange?: string;
   location?: string;
+  image?: string;
+  heroWidth?: string;
+  imageCaption?: string;
   skills?: string[];
 }
 
-const { company, title, dateRange, location, skills } = Astro.props;
+const { company, title, dateRange, location, image, heroWidth, imageCaption, skills } = Astro.props;
 ---
 
 <main class="bg-gray-50 min-h-screen w-full text-gray-900">
@@ -30,6 +33,21 @@ const { company, title, dateRange, location, skills } = Astro.props;
         </p>
       )}
     </div>
+
+    {image && (
+      <figure class="mt-6 mb-8">
+        <img
+          src={image}
+          alt={title}
+          class={`${heroWidth ?? "max-w-2xl"} mx-auto rounded-xl shadow-lg object-cover`}
+        />
+        {imageCaption && (
+          <figcaption class="mt-2 text-sm text-gray-500 text-center">
+            {imageCaption}
+          </figcaption>
+        )}
+      </figure>
+    )}
 
     <!-- Skills -->
     {skills && skills.length > 0 && (
@@ -201,7 +219,8 @@ const { company, title, dateRange, location, skills } = Astro.props;
           btnPrev.addEventListener("click", (e) => {
             e.stopPropagation();
             if (!currentImages.length) return;
-            const nextIndex = (index - 1 + currentImages.length) % currentImages.length;
+            const nextIndex =
+              (index - 1 + currentImages.length) % currentImages.length;
             show(nextIndex);
           });
         }
@@ -223,7 +242,8 @@ const { company, title, dateRange, location, skills } = Astro.props;
           if (e.key === "Escape") {
             closeLightbox();
           } else if (e.key === "ArrowLeft") {
-            const nextIndex = (index - 1 + currentImages.length) % currentImages.length;
+            const nextIndex =
+              (index - 1 + currentImages.length) % currentImages.length;
             show(nextIndex);
           } else if (e.key === "ArrowRight") {
             const nextIndex = (index + 1) % currentImages.length;
