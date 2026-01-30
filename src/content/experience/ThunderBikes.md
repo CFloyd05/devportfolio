@@ -14,16 +14,16 @@ skills:
 
 ## Overview
 
-The UBC ThunderBikes is an engineering design team dedicated to building and racing electric motorcycles. We're excited to be competing in MotoStudent, taking place during 2027 in Spain. For this competition, we are building a brand new motorcycle from scratch.
+The UBC ThunderBikes is an engineering design team dedicated to building and racing electric motorcycles. We're excited to be competing in MotoStudent, taking place in 2027 in Spain. For this competition, we are building a brand new motorcycle from scratch.
 
-This is my third year on the team, and I am excited to be filling the role of co-captain. As co-captain, I oversee the mechanical and aerodynamics teams. I manage the day to day activities of the team and provide input and guidance to our designs.
+This is my third year on the team, and I am excited to be filling the role of co-captain. As co-captain, I oversee the mechanical and aerodynamics teams. I manage the day-to-day activities of the team and provide input and guidance to our designs.
 
 
 ## Previous Technical Work
 
-Prior to my time as co-captain, I was on the mechanical subteam. I gained valuable skills, such as CAD, making engineering drawings, and collabration within an engineering context.
+Prior to my time as co-captain, I was on the mechanical sub-team. I gained valuable skills, such as CAD, making engineering drawings, and collaboration within an engineering context.
 
-I also did a quite a bit of metal-work. I used equipment such as water-jet cutters, MIG welders, angle grinders, and press-breaks. I learned to design for manufacturability and assembly, and include tolerancing into my designs.
+I also did quite a bit of metalwork. I used equipment such as water-jet cutters, MIG welders, angle grinders, and press brakes. I learned to design for manufacturability and assembly, and include tolerancing in my designs.
 
 
 <div class="grid grid-cols-1 md:grid-cols-2 gap-3 js-gallery">

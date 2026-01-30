@@ -8,13 +8,13 @@ skills: ["Circuit Design", "Soldering", "CAD", "3D Printing"]
 
 ## Overview
 
-**The Problem:** I have several USB powered LED lights for my bedroom, which I never used for two reasons. 1) It's incovenient to need to plug in usb cables to turn the lights on. It's an eyesore to have extra cables lying around, but if I hide them, such as with a power bar under my desk, they're difficult to reach. 2) I often don't have USB ports available for extra lights.
+**The Problem:** I have several USB-powered LED lights for my bedroom, which I never used for two reasons. 1) It's inconvenient to need to plug in USB cables to turn the lights on. It's an eyesore to have extra cables lying around, but if I hide them (such as with a power bar under my desk), they're difficult to reach. 2) I often don't have USB ports available for extra lights.
 
-**The Solution** I created a smart USB hub that can control several LED lights via a Google home, requiring just a single USB port for power.
+**The Solution:** I created a smart USB hub that can control several LED lights via a Google Home, requiring just a single USB port for power.
 
 ## System Architecture
 
-The system consists of a Google Home, Raspberry Pi, and ESP32, connected to a BJT based circuit to power USB ports.
+The system consists of a Google Home, Raspberry Pi, and ESP32, connected to a BJT-based circuit to power USB ports.
 
 The system flow is:
 
@@ -40,13 +40,13 @@ The system flow is:
 
 The ESP32 GPIO pins cannot drive the USB loads directly, so each port is controlled through a transistor switching stage. This stage acts like an electronic switch that turns a port on or off based on a signal from the ESP32.
 
-I designed and soldered a custom transistor based board for this. I chose to use the 2N2222 BJT for this, as it was easy to source, inexpensive, and met all my electrical requirements. Below is a Schematic I made in KiCad, and a picture of the circuit. I included the 10 ohm resistors to limit the collector current. This will dissipate power, and the lights won't receive the full 5 volts; however, since I didn't have any information on the current draw of the lights, I decided it was worth it to protect the BJTs. I haven't noticed any issues with having the resistor in the current path. 
+I designed and soldered a custom transistor-based board for this. I chose to use the 2N2222 BJT for this, as it was easy to source, inexpensive, and met all my electrical requirements. Below is a schematic I made in KiCad, and a picture of the circuit. I included the 10 ohm resistors to limit the collector current. This will dissipate power, and the lights won't receive the full 5 volts; however, since I didn't have any information on the current draw of the lights, I decided it was worth it to protect the BJTs. I haven't noticed any issues with having the resistor in the current path. 
 
 <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-6 max-w-4xl mx-auto items-center js-gallery">
   <figure>
     <img
-      src="\projects\smartUsbHub/BJTSchematic.jpg"
-      alt="CAD of 3D Printed Enclosure"
+      src="/projects/smartUsbHub/BJTSchematic.jpg"
+      alt="Schematic of BJT Switching Circuit"
       class="w-full h-auto object-cover rounded-lg border border-gray-300 shadow-sm cursor-pointer
             transform transition duration-200 hover:-translate-y-1 hover:shadow-xl hover:border-gray-400"
       data-caption="Schematic of BJT Switching Circuit"
@@ -71,8 +71,8 @@ There are two "types" of USB ports in the hub. The first three are simple on/off
 <div class="grid grid-cols-1 gap-6 max-w-lg mx-auto items-center js-gallery">
   <figure>
     <img
-      src="\projects\smartUsbHub/passthroughDiagram.jpg"
-      alt="CAD of 3D Printed Enclosure"
+      src="/projects/smartUsbHub/passthroughDiagram.jpg"
+      alt="Visualization of Passthrough USB Ports"
       class="w-full h-auto object-cover rounded-lg border border-gray-300 shadow-sm cursor-pointer
             transform transition duration-200 hover:-translate-y-1 hover:shadow-xl hover:border-gray-400"
       data-caption="Visualization of Passthrough USB Ports"
@@ -86,7 +86,7 @@ There are two "types" of USB ports in the hub. The first three are simple on/off
 
 #### Raspberry Pi Home Automation Server
 
-A Raspberry Pi acts as the local server for automation logic. It runs openHABian, a linux OS optimized for home automation. It reveices commands from a cloud bridge, and sends commands to the ESP32.
+A Raspberry Pi acts as the local server for automation logic. It runs openHABian, a Linux OS optimized for home automation. It receives commands from a cloud bridge, and sends commands to the ESP32.
 
 #### MQTT Messages
 
@@ -95,21 +95,21 @@ The Raspberry Pi communicates to the ESP32, using the MQTT protocol. The Pi runs
 
 #### ESP32 Firmware
 
-I wrote a faily simple firmware for the ESP32. During setup, it connects to my local network and the MQTT broker. I also added code to reconnect to these automatically if connection is ever lost. The ESP will then continuously listen to the MQTT topics. When the ESP detects a new message, it will initiate a digitalWrite to the pin associated with the correct USB port.
+I wrote a fairly simple firmware for the ESP32. During setup, it connects to my local network and the MQTT broker. I also added code to reconnect to these automatically if the connection is ever lost. The ESP will then continuously listen to the MQTT topics. When the ESP detects a new message, it will initiate a digitalWrite to the pin associated with the correct USB port.
 
 
 #### Google Assistant Cloud Bridge
 
-To connect Google Assistant to my local server I integrated a cloud based bridge, openHAB Cloud, that forwards voice commands into my home automation system. OpenHAB Cloud integrates nicely into the Google Assistant exosystem, as well as my local home automation server.
+To connect Google Assistant to my local server, I integrated a cloud-based bridge, openHAB Cloud, that forwards voice commands into my home automation system. OpenHAB Cloud integrates nicely into the Google Assistant ecosystem, as well as my local home automation server.
 
 ## Enclosure Design
 
-I designed an enclosure in SolidWorks and 3D printed it to house all the components. It's made from two parts, fastened together with heat-set inserts and m4 bolts. I added standoffs for the ESP32 and BJT board, which are held in place with additional hardware.
+I designed an enclosure in SolidWorks and 3D printed it to house all the components. It's made from two parts, fastened together with heat-set inserts and M4 bolts. I added standoffs for the ESP32 and BJT board, which are held in place with additional hardware.
 
 <div class="grid grid-cols-1 gap-6 max-w-2xl mx-auto items-center js-gallery">
   <figure>
     <img
-      src="\projects\smartUsbHub/enclosureCAD.jpg"
+      src="/projects/smartUsbHub/enclosureCAD.jpg"
       alt="CAD of 3D Printed Enclosure"
       class="w-full h-auto object-cover rounded-lg border border-gray-300 shadow-sm cursor-pointer
             transform transition duration-200 hover:-translate-y-1 hover:shadow-xl hover:border-gray-400"
@@ -122,7 +122,7 @@ I designed an enclosure in SolidWorks and 3D printed it to house all the compone
 
 ## Results
 
-The finished hub successfully controls 5V LED lights through Google Assistant voice commands. Once it was configured, it behaved like a normal smart home device, except the hardware and control path were fully custom. The system has proven to be exceptionally robust. After resolving some intial sleep issues, I've never needed to debug or fix the system. There are no issues with unplugging any of the components, such as the USB hub, the Pi server, or my local network. Once they're all powered back on, the system will reconnect automatically.
+The finished hub successfully controls 5V LED lights through Google Assistant voice commands. Once it was configured, it behaved like a normal smart home device, except the hardware and control path were fully custom. The system has proven to be exceptionally robust. After resolving some initial sleep issues, I've never needed to debug or fix the system. There are no issues with unplugging any of the components, such as the USB hub, the Pi server, or my local network. Once they're all powered back on, the system will reconnect automatically.
 
 <figure class="max-w-xl mx-auto">
   <img

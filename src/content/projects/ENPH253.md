@@ -8,7 +8,7 @@ skills: ["SolidWorks", "Laser-Cutting", "3D Printing", "Machining"]
 
 ## Overview
 
-The goal of this competition was to build an autonomous robot which would rescue stuffed animals, and return them to a safe zone.
+The goal of this competition was to build an autonomous robot which would rescue stuffed animals and return them to a safe zone.
 
 <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-6 max-w-4xl mx-auto items-center js-gallery">
   <figure>
@@ -34,7 +34,7 @@ The goal of this competition was to build an autonomous robot which would rescue
   </figure>
 </div>
 
-We participated in this competition in a team a four. I was responsible for the CAD and mechanical design of the robot. My teammates were: George Sleen - PCB design and software; Alessandra Ionescu-Zanetti - PCB design and software; Jonah Lee - Software.
+We participated in this competition in a team of four. I was responsible for the CAD and mechanical design of the robot. My teammates were: George Sleen - PCB design and software; Alessandra Ionescu-Zanetti - PCB design and software; Jonah Lee - Software.
 
 ## Design
 
@@ -64,13 +64,13 @@ I was responsible for the majority of the mechanical design and CAD of our robot
   </figure>
 </div>
 
-The design we settled on used a roller intake connected to two arms. In the centre of the robot was a large basket, where we would collect the pets. We then would attach the basket to the zipline, as seen in the CAD of the playing surface, which would deliver the pets to the safe zone.
+The design we settled on used a roller intake connected to two arms. In the centre of the robot was a large basket, where we would collect the pets. We would then attach the basket to the zipline, as seen in the CAD of the playing surface, which would deliver the pets to the safe zone.
 
-My largest challenge with this design were the size constraints. We wanted enough basket space to carry all the pets, however, the robot had to be narrow enough to fit through the doorway. This means I had to make the arm mechanisms as narrow as possible, which I accomplished over several iterations.
+My largest challenge with this design was the size constraints. We wanted enough basket space to carry all the pets, however, the robot had to be narrow enough to fit through the doorway. This means I had to make the arm mechanisms as narrow as possible, which I accomplished over several iterations.
 
 #### Chassis and Drivetrain
 
-The chassis of the robot was designed to be made from flat sheets of 3mm hardboard. These could be easily laser-cut, and we're assembled using finger joints and m3 hardware. To minimize the width of the robot, I encoporated part of the arms into the side of the chassis. For the drivetrain, we chose rear-wheel drive, with omni-wheels in the front. I designed 3D printed motor mounts for the drive and arm motors.
+The chassis of the robot was designed to be made from flat sheets of 3mm hardboard. These could be easily laser-cut, and were assembled using finger joints and M3 hardware. To minimize the width of the robot, I incorporated part of the arms into the side of the chassis. For the drivetrain, we chose rear-wheel drive, with omni-wheels in the front. I designed 3D printed motor mounts for the drive and arm motors.
 
 <div class="grid grid-cols-1 md:grid-cols-2 gap-3 js-gallery">
   <figure>
@@ -98,11 +98,11 @@ The chassis of the robot was designed to be made from flat sheets of 3mm hardboa
 
 #### Arm and Intake Systems
 
-The robot uses two contra-rotating brushes to pick up pets. The intake is mounted at the end of two arms, with a single joing at their base.
+The robot uses two contra-rotating brushes to pick up pets. The intake is mounted at the end of two arms, with a single joint at their base.
 
-To keep the motion of the two arms synchronized, I used a central driveshaft to connect them. Both arms are driven by a single motor, with an additional 4:1 gear ration between the motor and the arms. 
+To keep the motion of the two arms synchronized, I used a central driveshaft to connect them. Both arms are driven by a single motor, with an additional 4:1 gear ratio between the motor and the arms. 
 
-Originally, I used a belt instead of a gear system to transmit torque to the arms. I 3D printed a coupler to turn a section of belt into a closed loop. However, the coupler could not go around the pulleys, which limited the range of motion of the arms. I could've modified the geometry and purchased standard length belts, but I opted to switch to gears instead. In a previous revision, I had a potentiometer mounted to the driveshaft to track the arm position. This also had a problem with the range of motion of the arm, so I later mounted a potentiometer to track the rotation of the largest gear.
+Originally, I used a belt instead of a gear system to transmit torque to the arms. I 3D printed a coupler to turn a section of belt into a closed loop. However, the coupler could not go around the pulleys, which limited the range of motion of the arms. I could have modified the geometry and purchased standard length belts, but I opted to switch to gears instead. In a previous revision, I had a potentiometer mounted to the driveshaft to track the arm position. This also had a problem with the range of motion of the arm, so I later mounted a potentiometer to track the rotation of the largest gear.
 
 The orientation of the intake is coupled to the position of the arm through the toothed belt alongside the arms. This allowed us to control the rotation of the intake without requiring an additional actuator.
 
@@ -143,7 +143,7 @@ The orientation of the intake is coupled to the position of the arm through the 
 
 #### Basket and Zipline System
 
-Once our robot had traversed the course and collected all the pets, we opted to send them down the zipline, rather than drive back to the start, to save time. This meant we needed a detacheable basket, with a roller system to take the zipline. I designed a large basket, with two arms on either side, connected to our roller mechanism which used skateboard bearings to slide. The arms of the basket needed to be folded back in order to fit through the doorway, and not get in the way of the main arm. To accomplish this, I used torsion springs so the arm swing up by itself; I then used a servo motor to control a release mechanism, allowing the basket arms to swing up.
+Once our robot had traversed the course and collected all the pets, we opted to send them down the zipline, rather than drive back to the start, to save time. This meant we needed a detachable basket, with a roller system to ride on the zipline. I designed a large basket, with two arms on either side, connected to our roller mechanism which used skateboard bearings to slide. The arms of the basket needed to be folded back in order to fit through the doorway, and not get in the way of the main arm. To accomplish this, I used torsion springs so the arm would swing up by itself; I then used a servo motor to control a release mechanism, allowing the basket arms to swing up.
 
 <div class="grid grid-cols-1 md:grid-cols-2 gap-3 js-gallery">
   <figure>
@@ -172,9 +172,9 @@ Once our robot had traversed the course and collected all the pets, we opted to 
 
 ## Manufacturing
 
-I was also responsible for the majority of the manufacturing of the robot. The chasis and gears was lasercut out of a mix of hardboard, acrylic, and delrin. For the shafts of the basket arms, which housed the torsion springs, I made aluminum shafts on the lathe. Pulleys and many other miscelenous components were 3D printed in PETG.
+I was also responsible for the majority of the manufacturing of the robot. The chassis and gears were laser-cut out of a mix of hardboard, acrylic, and Delrin. For the shafts of the basket arms, which housed the torsion springs, I made aluminum shafts on the lathe. Pulleys and many other miscellaneous components were 3D printed in PETG.
 
-Throughout the two month competition, I was constantly iterating on my designs. I made around 5 revisions of each subsystem, for some of them even more.
+Throughout the two-month competition, I was constantly iterating on my designs. I made around 5 revisions of each subsystem, for some of them even more.
 
 <div class="grid max-w-lg gap-3 js-gallery mx-auto">
   <figure>
