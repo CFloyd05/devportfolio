@@ -4,7 +4,7 @@
   description: "Portfolio website of Ryan Fitzgerald",
   accentColor: "#2295a9ff",
 
-  resumeUrl: "/resume.pdf",
+  resumeUrl: "/ConnorFloyd_Resume.pdf",
 
   social: {
     email: "connorbfloyd@gmail.com",
