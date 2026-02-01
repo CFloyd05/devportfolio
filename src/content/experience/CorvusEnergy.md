@@ -117,7 +117,7 @@ I designed and built this battery lifting jig in preparation for our team to wor
 
 I machined a few custom parts on the CNC mill, and 3D printed some of the non-structural parts. To validate my design, I ran some FEAs in the local area where the prototype mounted to the jig; the location that I determined to be the weakest point. In the final weeks of my co-op, I made modifications to this jig, such that it could be adapted for the team's next two projects.
 
-#### Battery Testing: Short-Circuit, Thermal Runaway, Vibration
+#### Battery Testing: Short-Circuit, Thermal Runaway, Vibration, Environmental Sealing
 
 I performed and assisted with a variety of tests during my co-op. The most notable of which was a battery short-circuit test. For this test, I analyzed the risk of shorting battery cells at different states of charge, and therefore at different voltages. For this test, I first wrote a test plan, and designed a remote actuation system to start the test. I then wrote a safe work procedure, and assembled a test battery module. I instrumented the module with thermocouples and voltage pickups, and took measurements such as resistances between different areas of the battery module. Lastly, I ran the test, keeping a test journal, and documented my results in a test report.
 
