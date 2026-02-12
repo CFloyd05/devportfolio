@@ -29,7 +29,7 @@ const { title, description, image, imageCaption, skills, heroWidth } = Astro.pro
           <img
             src={image}
             alt={title}
-            class={`${Astro.props.heroWidth ?? "max-w-2xl"} w-full max-h-[60vh] mx-auto rounded-xl shadow-lg object-contain`}
+            class={`${Astro.props.heroWidth ?? "max-w-2xl"} mx-auto rounded-xl shadow-lg object-cover`}
           />
           {imageCaption && (
             <figcaption class="mt-2 text-sm text-gray-500 text-center">
