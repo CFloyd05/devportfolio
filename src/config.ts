@@ -14,7 +14,7 @@
   },
 
   aboutMe:
-    "A third year engineering physics student at the University of British Columbia with a passion for mechanical design and manufacturing. Experienced in CAD software, machining, and 3D printing. Seeking opportunities to apply my skills and contribute to innovative projects.",
+    "A third year engineering physics student at the University of British Columbia with a passion for mechanical design and hands-on manufacturing. Experienced in CAD software, machining, and 3D printing. Seeking opportunities to apply my skills and contribute to innovative projects.",
  
     skills: [
       "SolidWorks", 
@@ -29,9 +29,9 @@
 
   projects: [
     {
-      name: "ENPH 253 Robotics Competition",
+      name: "Autonomous Pet Rescue Robot",
       description:
-        "Designed and built an autonomous rescue robot. Led mechanical design and fabrication. Integrated multiple systems and rapidly iterated through testing.",
+        "Led mechanical design and fabrication for a 4-person team, developing an autonomous robot to locate and transport stuffed animals. Created a full SolidWorks assembly of the robot, designing subsystems including the chassis, drivetrain, robotic arms, and pickup mechanism.",
       link: "/projects/ENPH253",
       image: "/projects/ENPH253/ENPH253Thumbnail.jpg",
       skills: ["SolidWorks", "Laser-Cutting", "3D Printing", "Machining", "Rapid Prototyping"],
@@ -47,7 +47,7 @@
     {
       name: "Machined Aluminum and Brass Smartphone Stand",
       description:
-        "Manufactured a phone stand from aluminum and brass using mill and lathe operations. Demonstrated excellent attention to details to meet tolerances and achieve a clean final fit and finish.",
+        "Machined a phone stand from aluminum and brass using a mill, lathe, and water-jet cutter.",
       link: "/projects/SmartphoneStand",
       image: "/projects/smartphoneStand/PhoneStandNicePic.jpg",
       tallThumbnail: true,
@@ -56,7 +56,7 @@
     {
       name: "Closed-Loop Motor Controller",
       description:
-        "Built a closed-loop motor speed controller through a mixed analog and digital circuit. Implemented speed sensing and an analog proportional-integral error amplifier.",
+        "Built a discrete closed-loop motor speed controller through a mixed analog and digital circuit. Implemented speed sensing and an analog proportional-integral error amplifier.",
       link: "/projects/ENPH259MotorController",
       image: "/projects/ENPH259MotorController/MotorControllerThumbnail.jpg",
       tallThumbnail: true,
@@ -65,7 +65,7 @@
     {
       name: "Soldering Fume Extractor",
       description:
-        "Designed and fabricated a compact fume extractor using a salvaged PC fan and a multi-stage filter. Designed and 3D printed an enclosure and wired a switched power interface.",
+        "Designed and fabricated a compact fume extractor using a salvaged PC fan and a multi-stage filter. Modeled and 3D printed an enclosure and wired a switched power interface.",
       link: "/projects/SolderingFumeExtractor",
       image: "/projects/fumeExtractor/frontPic.jpg",
       skills: ["SolidWorks", "3D printing", "Soldering"],
@@ -80,8 +80,8 @@
       image: "/experience/corvus/CorvusLogo.png",
       bullets: [
         "Designed and manufactured prototype parts for battery systems, involving extensive use of SolidWorks, machining, and 3D printing",
-        "Performed various battery system tests, including tests on thermal runaway, vibrations, adhesives, and environmental sealing. Required instrumentation and formal documentation (risk analyses, test plans, journals, and reports)",
-        "Developed CNC confidence with a Tormach mill (conversational + CAM toolpaths) and documented machining procedures for future co-ops",
+        "Executed battery system tests on thermal runaway, vibrations, adhesives, and environmental sealing tests. Required instrumentation and formal documentation (risk analyses, test plans, journals, and reports)",
+        "Programmed and operated a Tormach CNC mill using conversational machining and 3D toolpaths. Documented machining procedures for future co-ops",
       ],
       link: "/experience/CorvusEnergy",
     },
