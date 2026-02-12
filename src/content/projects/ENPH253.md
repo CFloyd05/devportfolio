@@ -1,6 +1,6 @@
 ---
-title: "ENPH 253 Robotics Competition"
-description: "Created an autonomous robot to rescue stuffed animals in a team of four."
+title: "Autonomous Pet Rescue Robot"
+description: "Created an autonomous competition robot to rescue stuffed animals in a team of four."
 image: "/projects/ENPH253/253News.jpg"
 imageCaption: "Our robot was featured on a local news station!"
 skills: ["SolidWorks", "Laser-Cutting", "3D Printing", "Machining"]
