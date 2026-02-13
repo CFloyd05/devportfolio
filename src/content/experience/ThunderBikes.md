@@ -1,5 +1,6 @@
 ---
-title: "UBC ThunderBikes - Co-Captain"
+company: "UBC ThunderBikes"
+title: "Engineering Design Team Co-Captain"
 image: "/experience/thunderBikes/bike.jpg"
 imageCaption: "The team's previous motorcycle project"
 dateRange: "Sept 2023 – Present"

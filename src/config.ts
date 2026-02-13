@@ -86,8 +86,8 @@
       link: "/experience/CorvusEnergy",
     },
     {
-      company: "Engineering Design Team",
-      title: "UBC ThunderBikes - Co-Captain",
+      company: "UBC ThunderBikes",
+      title: "Engineering Design Team Co-Captain",
       dateRange: "Sep 2023 - Present",
       image: "/experience/thunderBikes/TBikesLogo.png",
       bullets: [

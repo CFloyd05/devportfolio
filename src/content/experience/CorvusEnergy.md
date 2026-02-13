@@ -1,6 +1,7 @@
 ---
 company: "Corvus Energy"
 title: "Mechanical Engineering Co-op Student"
+image: "/experience/corvus/CorvusLogo.png"
 dateRange: "January 2024 – April 2024"
 location: "Richmond, BC"
 skills:
