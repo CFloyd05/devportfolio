@@ -13,32 +13,33 @@ export interface Props {
 const { title, description, image, imageCaption, skills, heroWidth } = Astro.props;
 ---
 
-<main class="bg-gray-50 min-h-screen w-full text-gray-900">
+<main class="bg-gray-50 min-h-screen w-full text-gray-900 relative">
 
   <a href="/" class="back-home" aria-label="Back to homepage">← Return to Homepage</a>
 
   <style>
-    .back-home {
-      position: fixed;
-      top: 16px;
-      left: 16px;
-      z-index: 1000;
+      .back-home {
+        position: absolute;
+        display: inline-flex;
+        top: 16px;
+        left: 16px;
+        z-index: 1000;
 
-      padding: 8px 12px;
-      border-radius: 10px;
+        padding: 8px 12px;
+        border-radius: 10px;
 
-      text-decoration: none;
-      font-weight: 600;
+        text-decoration: none;
+        font-weight: 600;
 
-      background: rgba(255, 255, 255, 0.85);
-      border: 1px solid rgba(0, 0, 0, 0.12);
-      backdrop-filter: blur(8px);
-    }
+        background: rgba(255, 255, 255, 0.85);
+        border: 1px solid rgba(0, 0, 0, 0.12);
+        backdrop-filter: blur(8px);
+      }
 
-    .back-home:hover {
-      transform: translateY(-1px);
-    }
-  </style>
+      .back-home:hover {
+        transform: translateY(-1px);
+      }
+    </style>
 
   <section class="px-6 sm:px-10 md:px-16 lg:px-24 py-16 max-w-5xl mx-auto">
     <div class="max-w-4xl mx-auto space-y-6 mb-16">
