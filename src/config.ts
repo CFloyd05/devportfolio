@@ -45,10 +45,10 @@
       skills: ["Circuit Design", "Embeded Firmware", "ESP32", "Raspberry Pi", "Soldering", "CAD", "3D Printing"],
     },
     {
-      name: "Machined Aluminum and Brass Smartphone Stand",
+      name: "Machined Aluminum and Brass Phone Stand",
       description:
         "Machined a phone stand from aluminum and brass using a mill, lathe, and water-jet cutter.",
-      link: "/projects/SmartphoneStand",
+      link: "/projects/PhoneStand",
       image: "/projects/smartphoneStand/PhoneStandNicePic.jpg",
       tallThumbnail: true,
       skills: ["Machining", "Mill", "Lathe", "Water-jet Cutter", "Bench Grinder", "Fixturing"],
