@@ -39,3 +39,21 @@ import "../styles/global.css";
     <Footer />
   </body>
 </html>
+
+<script>
+  window.addEventListener("beforeunload", () => {
+    sessionStorage.setItem("homepage-scroll", String(window.scrollY));
+  });
+
+  window.addEventListener("DOMContentLoaded", () => {
+    const shouldRestore = sessionStorage.getItem("restore-home-scroll") === "1";
+    sessionStorage.removeItem("restore-home-scroll");
+
+    if (!shouldRestore) return;
+
+    const savedScroll = sessionStorage.getItem("homepage-scroll");
+    if (savedScroll !== null) {
+      window.scrollTo(0, parseInt(savedScroll, 10));
+    }
+  });
+</script>

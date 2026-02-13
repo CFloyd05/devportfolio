@@ -1,7 +1,7 @@
 ﻿export const siteConfig = {
   name: "Connor Floyd",
   title: "UBC Engineering Physics Student",
-  description: "Portfolio website of Ryan Fitzgerald",
+  description: "Portfolio website of Connor Floyd",
   accentColor: "#2295a9ff",
 
   resumeUrl: "/ConnorFloyd_Resume.pdf",
