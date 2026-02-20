@@ -1,5 +1,5 @@
 ---
-company: "Corvus Energy"
+company: "Corvus Energy - Prototyping Team"
 title: "Mechanical Engineering Co-op Student"
 image: "/experience/corvus/CorvusLogo.png"
 dateRange: "January 2024 – April 2024"
@@ -16,25 +16,26 @@ skills:
 
 ## Who is Corvus Energy
 
-Corvus Energy is the world's leading supplier of batteries for the maritime industry; powering electric and hybrid marine vessels.
+Corvus Energy is the world's leading supplier of battery energy storage systems for the maritime industry; powering electric and hybrid marine vessels.
 
 ## My Role
 
-As part of the prototyping team at Corvus Energy, my role was to design, build, and test prototype parts for their new battery systems. My job responsibilities included: designing parts and assemblies in SolidWorks; manufacturing parts, often with a Tormach CNC mill or 3D printer; performing tests on various prototype parts and systems; writing thorough documentation for my designs and tests.
+As part of the prototyping team at Corvus Energy, I designed, built, and tested parts for their battery systems. I designed parts and assemblies in SolidWorks and produced manufacturing drawings and supporting documentation for my designs. I manufactured and assembled prototypes using CNC machines and shop tools. I used a Tormach CNC mill and 3D printers extensively for my projects. I executed battery system tests on thermal runaway, vibrations, adhesives, and environmental sealing. I wrote formal documentation such as risk analyses, test plans, test journals, and reports. Across my four-month term I owned work from ideation to finalized prototypes, completing 15 plus projects. I coordinated closely with other engineers while completing tasks with minimal supervision.
+
 
 ## Skills
 
 #### SolidWorks
 
-A significant amount of my time was spent designing parts in SolidWorks. I improved upon my skills, particularly when working with large assemblies, and parameter-based models.
+SolidWorks was my primary design tool throughout my term. I worked extensively with large assemblies and parameter-driven models. I created all my manufacturing drawings in SolidWorks. 
 
 #### Machining and CNC
 
-One of my favorite parts of this co-op was how much time I got to spend hands-on, making parts. I got very familiar with the tools in the machine shop, especially the CNC mill. The experience I gained here greatly complemented my previous machine shop training. 
+This co-op involved extensive hands-on prototyping using shop tools, CNC machining, and 3D printing. Much of my machining work was done on a Tormach CNC mill, where I used conversational machining and 3D toolpaths. The experience I gained here greatly complemented my previous machine shop training. 
 
-I also wrote a few pieces of machining documentation for future co-ops. I created a machining guide, with a focus on the Tormach conversational machining. Additionally, I wrote instructions on how to square a vice on the CNC mill using a dial indicator.
+I wrote internal machining documentation for future co-ops, such as a machining guide with a focus on Tormach conversational machining. I also wrote instructions on mill setup, and how to use a dial indicator to ensure squareness.
 
-In addition to machining, I worked extensively with 3D printers. I used both BambuLab FDM printers and resin printers.
+Additionally, I used both BambuLab FDM printers and resin printers to create prototypes.
 
 <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 max-w-4xl mx-auto items-center js-gallery">
   <figure>
@@ -80,8 +81,7 @@ In addition to machining, I worked extensively with 3D printers. I used both Bam
 
 #### Documentation and Presentation Skills
 
-I greatly improved upon my documentation skills through this co-op. For every single task I did, I wrote documentation of some form. For tests, I would write a plan, a test journal, and a test report. For large projects, I would write documentation going through the design and manufacturing process. For small tasks, I would still write about them in my bi-weekly sprint recaps. At the end of each sprint, I would present the work I did to my team and some of the engineering management.
-
+Documentation was a key part of my role. I wrote thorough documentation, ensuring that the work I performed remained useful after my co-op ended. For tests, I wrote a test plan, a test journal, and a test report. For large projects, I documented the design and manufacturing process. Even for small tasks, I compiled my work in my bi-weekly sprint recaps. At the end of each sprint, I presented the work I did to my team and engineering management.
 
 
 ## My Projects

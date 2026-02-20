@@ -107,6 +107,7 @@
       achievements: [
         "GPA: 89.6%",
         "UBC Trek Excellence Scholarship Recipient",
+        "Dean's List (2023–2025)",
         "Transcript Avaliable Upon Request",
       ],
     },
