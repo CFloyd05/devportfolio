@@ -116,13 +116,38 @@ Unfortunately, I'm unable to talk about most of the work I did, due to IP issues
 
 I designed and built this battery lifting jig in preparation for our team to work on a particularly heavy project, requiring the use of a hoist to move the prototype around. I designed the assembly in SolidWorks, making use of off-the-shelf parts from McMaster-Carr and aluminum extrusions.
 
-I machined a few custom parts on the CNC mill, and 3D printed some of the non-structural parts. To validate my design, I ran some FEAs in the local area where the prototype mounted to the jig; the location that I determined to be the weakest point. In the final weeks of my co-op, I made modifications to this jig, such that it could be adapted for the team's next two projects.
+I machined a few custom parts on the CNC mill, and 3D printed the non-structural parts. To validate my design, I ran FEAs in the area I determined to be the weakest point. In the final weeks of my co-op, I made modifications to this jig, such that it could be adapted for the team's next two projects.
 
 #### Battery Testing: Short-Circuit, Thermal Runaway, Vibration, Environmental Sealing
 
 I performed and assisted with a variety of tests during my co-op. The most notable of which was a battery short-circuit test. For this test, I analyzed the risk of shorting battery cells at different states of charge, and therefore at different voltages. For this test, I first wrote a test plan, and designed a remote actuation system to start the test. I then wrote a safe work procedure, and assembled a test battery module. I instrumented the module with thermocouples and voltage pickups, and took measurements such as resistances between different areas of the battery module. Lastly, I ran the test, keeping a test journal, and documented my results in a test report.
 
 I also assisted with thermal runaway testing and vibration testing. This involved building the systems being tested, managing documentation and data acquisition, instrumentation, and visiting third-party labs. I wrote a test plan to characterize the performance of different thermal insulators, however my co-op term ended before that was performed.
+
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-6 max-w-4xl mx-auto items-center js-gallery">
+  <figure>
+    <img
+      src="/experience/corvus/vibeTesting.jpg"
+      alt="Vibration Testing a Prototype"
+      class="w-full h-auto object-cover rounded-lg border border-gray-300 shadow-sm cursor-pointer
+            transform transition duration-200 hover:-translate-y-1 hover:shadow-xl hover:border-gray-400"
+      data-caption="Vibration Testing a Prototype"
+      />
+      <figcaption class="text-center text-md text-gray-500">Vibration Testing a Prototype</figcaption>
+  </figure>
+  
+  <figure>
+    <img
+      src="/experience/corvus/thermalRunawayTesting.jpg"
+      alt="Aftermath of a Thermal Runaway Test"
+      class="w-full h-auto object-cover rounded-lg border border-gray-300 shadow-sm cursor-pointer
+            transform transition duration-200 hover:-translate-y-1 hover:shadow-xl hover:border-gray-400"
+      data-caption="Aftermath of a Thermal Runaway Test"
+    />
+    <figcaption class="text-center text-md text-gray-500">Aftermath of a Thermal Runaway Test</figcaption>
+  </figure>
+</div>
+
 
 #### Adhesive Testing
 
